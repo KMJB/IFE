@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>零基础HTML及CSS编码</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            html,body{margin:0;}
+            body{
+                font-size:14px;
+                font-family: 'Microsoft YaHei';
+                height:100%;
+                background-color:#EEEEEE;
+            }
+            /* 导航栏 */
+            .navbar{
+                width:100%;height:70px;background-color:#333333;
+            }
+            .navbar li{float:left;margin-left:25px;}
+
+            .nav-inner{
+                height:100%;margin:auto;
+                display:flex;justify-content:space-between;align-items:center
+            }
+            .img-logo{width:200px;height:45px;}
+            .navbar a{
+                color:#fff;text-decoration:none;
+            }
+
+            /* 页面文档容器 */
+            #containter{margin:auto;}
+            #containter article,aside{
+                width:100%;background-color:#fff;box-shadow:2px 2px 2px gray;
+            }
+            .airticle-content{padding:20px;margin-top:20px;}
+            .tbList{border-collapse:collapse;width:100%;}
+            .tbList>thead{background-color:#333333;color:#fff;font-weight:bold;}
+            .tbList>thead th{border:1px solid gray;text-align:left;}
+            .tbList>tbody td{border:1px solid #CCC;}
+            .tbList>tfoot{background-color:#CCC;}
+            .tbList td,th{padding:5px;}
+
+            
+            .aside-table{width:100%;}
+            .aside-table td:nth-child(1){
+                text-align:right;padding-right:10px;
+            }
+            .btn-submit-aside{
+                background-color:#3355D0;width:100%;padding:10px;
+                color:#fff;font-weight:bold;border:0px;border-radius:5px;cursor:pointer;
+            }
+            aside>h3{border-left:4px solid #CCC;padding-left:10px;line-height:30px}
+
+            /* 页脚 */
+            footer{
+                width:100%; height:60px;
+                display:flex;justify-content:center;align-items:center;
+                background-color:#333333;color:#fff;
+            }
+
+            @media screen and (min-width: 1900px) {
+                .content{width:1170px}
+            }
+            @media screen and (max-width: 1650px) {
+                .content{width:980px}
+            }
+            @media screen and (max-width: 1280px) {
+                .content{width:800px}
+            }
+            @media screen and (max-width: 1000px) {
+                .content{width:720px}
+            }
+            @media screen and (max-width: 800px) {
+                .content{width:600px}
+            }
+        </style>
+    </head>
+    <body>
+        <!-- nav -->
+        <header>
+            <nav class="navbar">
+                <div class="nav-inner content">
+                    <!-- logo -->
+                    <img src="http://ife.baidu.com/asset/img/logo.png" class="img-logo" />
+                    <!-- menu -->
+                    <ul>
+                        <li><a href="http://ife.baidu.com/">导航链接一</a></li>
+                        <li><a href="http://ife.baidu.com/">导航链接二</a></li>
+                        <li><a href="http://ife.baidu.com/">导航链接三</a></li>
+                        <li><a href="http://ife.baidu.com/">导航链接四</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- content -->
+        <div id="containter" class="content">
+            
+                <!-- article 1 -->
+                <article>
+                    <div class="airticle-content">
+                        <h2>文章一级标题</h2>
+                        <h3>文章二级标题</h3>
+                        <p>文章作者 文章发表时间</p>
+
+                        <p>
+                            曲曲折折的荷塘上面，弥望的是田田的叶子。叶子出水很高，<b>像亭亭的舞女的裙</b>。层层的叶子中间，零星地点缀着些白花，有袅娜地开着的，有羞涩地打着朵儿的；正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。
+                            <br />
+                            换行了
+                            <br />
+                            微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，<a href="http://ife.baidu.com" target="_blank">这便宛然有了一道凝碧的波痕</a>。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色；而叶子却更见风致了。
+                        </p>
+
+                        <img src="../../source/yanxihu.jpg" />
+                        <p>月光如流水一般，静静地泻在这一片叶子和花上。薄薄的青雾浮起在荷塘里。叶子和花仿佛在牛乳中洗过一样；又像笼着轻纱的梦。虽然是满月，天上却有一层淡淡的云，所以不能朗照；但我以为这恰是到了好处——酣眠固不可少，小睡也别有风味的。月光是隔了树照过来的，高处丛生的灌木，落下参差的斑驳的黑影，峭楞楞如鬼一般；弯弯的杨柳的稀疏的倩影，却又像是画在荷叶上。塘中的月色并不均匀；但光与影有着和谐的旋律，如梵婀玲上奏着的名曲。</p>
+                    </div>
+                </article>
+                <!-- article 2 -->
+                <article>
+                    <div class="airticle-content">
+                        <h2>另一篇文章一级标题</h2>
+                        <h3>文章二级标题</h3>
+                        <p>文章作者 文章发表时间</p>
+                        <p>
+                            秋天，无论在什么地方的秋天，总是好的；可是啊，北国的秋，却特别地来得清，来得静，来得悲凉。我的不远千里，要从杭州赶上青岛，更要从青岛赶上北平来的理由，也不过想饱尝一尝这“秋”，这故都的秋味。
+                        </p>
+                        <p>
+                            江南，秋当然也是有的；但草木雕得慢，空气来得润，天的颜色显得淡，并且又时常多雨而少风；一个人夹在苏州上海杭州，或厦门香港广州的市民中间，浑浑沌沌地过去，只能感到一点点清凉，秋的味，秋的色，秋的意境与姿态，总看不饱，尝不透，赏玩不到十足。秋并不是名花，也并不是美酒，那一种半开，半醉的状态，在领略秋的过程上，是不合适的。
+                        </p>
+                        <p>
+                            不逢北国之秋，已将近十余年了。在南方每年到了秋天，总要想起陶然亭的芦花，<a href="http://ife.baidu.com">钓鱼台的柳影</a>，西山的虫唱，玉泉的夜月，潭柘寺的钟声。<b>在北平即使不出门去罢</b>，就是在皇城人海之中，租人家一椽破屋来住着，早晨起来，泡一碗浓茶、向院子一坐，你也能看得到很高很高的碧绿的天色，听得到青天下驯鸽的飞声。从槐树叶底，朝东细数着一丝一丝漏下来的日光，或在破壁腰中，静对着象喇叭似的牵牛花（朝荣）的蓝朵，自然而然地也能够感觉到十分的秋意。说到了牵牛花，我以为以蓝色或白色者为佳，紫黑色次之，淡红色最下。最好，还要在牵牛花底，教长着几根疏疏落落的尖细且长的秋草，使作陪衬。
+                        </p>
+                        <img src="../../source/xihu.jpg" />
+                        <ul>
+                            <li>列表项目一</li>
+                            <li>列表项目二</li>
+                            <li>列表项目三</li>
+                        </ul>
+                    </div>
+                </article>
+                <article>
+                    <div class="airticle-content">
+                        <h2>图片</h2>
+                        <figure>
+                            <figcaption>好看的图片</figcaption>
+                            <img src="../../source/xihu.jpg" />
+                        </figure>
+                        <figure>
+                            <figcaption>好看的图片</figcaption>
+                            <img src="../../source/xihu.jpg" />
+                        </figure>
+                        <figure>
+                            <figcaption>好看的图片</figcaption>
+                            <img src="../../source/xihu.jpg" />
+                        </figure>
+                    </div>
+                </article>
+
+                <!-- article 3 -->
+                <article>
+                    <div class="airticle-content">
+                        <h2>最后一篇文章一级标题</h2>
+                        <h3>文章二级标题</h3>
+                        <p>文章作者 文章发表时间</p>
+
+                        <ol>
+                            <li>排名1</li>
+                            <li>排名2</li>
+                            <li>排名3</li>
+                        </ol>
+                        <span>
+                            下面是一个表格，给表格添加了一个border="1" 好让你看出是一个表格，你们不用写html不需要添加
+                        </span>
+
+                        <table class="tbList">
+                            <thead>
+                                <tr>
+                                    <th>表头</th>
+                                    <th>表头</th>
+                                    <th>表头</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>表内容单元格</td>
+                                    <td>表内容单元格</td>
+                                    <td><a href="#">操作</a></td>
+                                </tr>
+                                <tr>
+                                    <td>表内容单元格</td>
+                                    <td>表内容单元格</td>
+                                    <td><a href="#">操作</a></td>
+                                </tr>
+                                <tr>
+                                    <td>表内容单元格</td>
+                                    <td>表内容单元格</td>
+                                    <td><a href="#">操作</a></td>
+                                </tr>
+                                <tr>
+                                    <td>表内容单元格</td>
+                                    <td>表内容单元格</td>
+                                    <td><a href="#">操作</a></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>总计</td>
+                                    <td colspan="2">1000</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- sidebar -->
+                <aside>
+                    <div class="airticle-content">
+                        <h3>这里以后是一个侧栏，这是侧栏的标题</h3>
+                        <table class="aside-table">
+                            <tr>
+                                <td>请输入邮箱地址</td>
+                                <td>
+                                    <input type="text" placeholder="这是一个文本框" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>邮箱地址请按要求格式输入</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    请输入密码
+                                </td>
+                                <td>
+                                    <input type="password" placeholder="这是一个文本输入框" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>请重复输入密码</td>
+                                <td><input type="password" placeholder="这是一个文本输入框" /></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>密码请为6-16位英文数字</td>
+                            </tr>
+                            <tr>
+                                <td>性别</td>
+                                <td>
+                                    <input type="radio" name="gender" value="1" id="c1718fc120d6" /><label for="c1718fc120d6">男</label>
+                                    <input type="radio" name="gender" value="0" id="c3b25ecafc2f" /><label for="c3b25ecafc2f">女</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>城市</td>
+                                <td>
+                                    <select>
+                                        <option>北京</option>
+                                        <option>天津</option>
+                                        <option>其他</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>爱好</td>
+                                <td>
+                                    <input type="checkbox" name="hobby" value="0" id="0f3b5c73fe9f" /><label for="0f3b5c73fe9f">运动</label>
+                                    <input type="checkbox" name="hobby" value="1" id="9d8ee58ecee1" /><label for="9d8ee58ecee1">艺术</label>
+                                    <input type="checkbox" name="hobby" value="2" id="96801a8b03f8" /><label for="96801a8b03f8">科学</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>个人描述</td>
+                                <td><textarea cols="30" rows="2">这是一个多行输入框，输入你的个人描述</textarea></td>
+                            </tr>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="submit" class="btn-submit-aside" value="确认提交" />
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </aside>
+            </div>
+        
+        <!-- footer -->
+        <footer>
+            <span>版权所有&copy;</span>
+        </footer>
+    </body>
+</html>
