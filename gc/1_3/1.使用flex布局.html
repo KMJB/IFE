@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <title>使用flex实现的三栏布局</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            html,body{margin:0;}
+            body{margin:10px;font-family:Arial;font-size:14px}
+            img{width:80px;height:80px}
+
+            #containter{display:flex;justify-content:flex-start;align-items:flex-start;background-color:#eee;padding:20px;}
+            .member{display:flex;flex-flow:column}
+            .member img{margin-bottom:10px}
+            aside{border:1px solid #999;background-color:#fff;padding:20px}
+        </style>
+    </head>
+    <body>
+        <div id="containter">
+            <!-- 团队名称和logo -->
+            <aside style="width:200px;">
+                <div style="display:flex;">
+                    <img src="../../source/xihu.jpg" />
+                    <span style="margin-left:10px">快码佳编</span>
+                </div>
+            </aside>
+
+            <!-- 团队介绍 -->
+            <aside style="width:100%;margin:0px 20px;">
+                <h2>快码佳编</h2>
+                <p>Hello，我们的团队叫<b>快码佳编</b>，就是写代码又快又好的意思(咳...这不废话吗~)。追求效率，又追求质量是我们团队的宗旨。</p>
+                <p>我们的团队成员大多有丰富的编程经验，也有的来自大校大学生。</p>
+                <p>虽然我们团队中没有人从事专门的前端工作，但我们对前端都是满满的爱。。。</p>
+
+                <div>
+                    <h3>团队成员介绍</h3>
+                    <ul>
+                        <li>兰雷明：我们队长，目前就职于百度，一位富有激情的运动型男！绝对帅！</li>
+                        <li>李亚丹：同样来自于百度，我们队伍的颜值担当！</li>
+                        <li>庾少华：一位来自于远古时代的大神，具体年代已不可考。</li>
+                        <li>兰义明：兰雷明的弟弟，大三学生。</li>
+                        <li>高崇：一位处女座技术宅重度中二病少年~</li>
+                    </ul>
+                </div>
+                <p>ps.我们团队还有很多隐藏大神...</p>
+
+                <p style="color:green">这是一个flex实现的布局，对IE的支持不是很好，我会再做一个传统布局。</p>
+            </aside>
+
+            <!-- 团队成员logo -->
+            <aside style="width:120px">
+                <div class="member">
+                    <img src="../../source/xihu.jpg" />
+                    <img src="../../source/yanxihu.jpg" />
+                    <img src="../../source/xihu.jpg" />
+                    <img src="../../source/yanxihu.jpg" />
+                    <img src="../../source/xihu.jpg" />
+                    <img src="../../source/yanxihu.jpg" />
+                </div>
+            </aside>
+        </div>
+    </body>
+</html>
