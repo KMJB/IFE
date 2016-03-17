@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务二</title>
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: #EEE;
+            font-size:12px;
+        }
+
+        /* 头部 */
+        header {
+            height: 64px;
+            background-color: #333;
+        }
+        header img{
+            float:left;
+        }
+        header nav{
+            padding-right:40px;
+            float: right;
+        }
+        header nav a {
+            line-height:64px;
+            margin-left:20px;
+            color: #fff;
+            text-decoration:none;
+        }
+        header nav a:hover{
+            color:#999;
+        }
+
+        /* 中间内容区域 */
+        .div-container{
+            font-size:14px;
+            width:96%;
+            margin:0 auto;
+        }
+        .div-container article,aside{
+            background-color:#fff;
+            margin:20px auto;
+            padding:30px 20px;
+            line-height:28px;
+        }
+        .div-container article h3{
+            color:#999;
+        }
+
+
+
+
+        /*底部*/
+        footer{
+            height: 84px;
+            background-color: #333;
+            color:#fff;
+            line-height:84px;
+            text-align:center;
+        }
+
+        /*公共部分*/
+
+        /*导test航选中的样式*/
+        .cur{
+            color:#999;
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- 头部 -->
+<header>
+    <!-- logo  -->
+    <img src="../../source/baidu_log.png" alt="百度" title="百度"/>
+    <!--导航 -->
+    <nav>
+        <a href="http://www.lanleiming.com/">链接一</a>
+        <a href="http://www.lanleiming.com/">链接二</a>
+        <a href="http://www.lanleiming.com/">链接三</a>
+        <a class="cur" href="http://www.lanleiming.com/">链接四</a>
+    </nav>
+</header>
+
+<!-- 内容区域 -->
+<div class="div-container">
+<!-- 文章一 -->
+<article>
+    <hgroup>
+        <h2>文章一的一级标题</h2>
+
+        <h3>文章一的二级标题</h3>
+    </hgroup>
+    <section>
+        <span>文章作者</span>
+        <time datetime="2016-3-17">文章发表时间</time>
+    </section>
+    <section>
+        这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落,换行了<br/>
+        这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落
+        这是一个很长的段落<a href="http://www.lanleiming.com/">这是一个链接。</a>这是一个很长的段落
+        这是一个很长的段落这是一个很长的段落这是一个很长的段落<strong>这个字体被加粗了！</strong>这是一个很长的段落
+        这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落
+        这是一个很长的段落这是一个很长的段落这是一个很长的段落
+        <img src="../../source/1_1.png" alt="这是一个图片"/>这是一个很长的段落这是一个很长的段落这是一个很长的段落
+        这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落
+        <a href="http://www.lanleiming.com/" target="_bank">这个链接在新窗口打开</a>这是一个很长的段落这是一个很长的段
+    </section>
+</article>
+
+<!-- 文章二 -->
+<article>
+    <hgroup>
+        <h2>文章二的一级标题</h2>
+
+        <h3>文章二的二级标题</h3>
+    </hgroup>
+    <section class="articel-user">
+        <span class="articel-author">文章作者</span>
+        <time datetime="2016-3-17">文章发表时间</time>
+    </section>
+    <section>
+        这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落<br/>
+        这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落
+        这是一个很长的段落<a href="http://www.lanleiming.com/">这是一个链接。</a>这是一个很长的段落
+        这是一个很长的段落这是一个很长的段落这是一个很长的段落<strong>这个字体被加粗了！</strong>这是一个很长的段落
+        这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落
+        这是一个很长的段落这是一个很长的段落这是一个很长的段落
+        <img src="../../source/1_1.png" alt="这是一个图片"/>
+    </section>
+    <section>
+        <ul>
+            <li>列表项目一</li>
+            <li>列表项目二</li>
+            <li>列表项目三</li>
+        </ul>
+    </section>
+</article>
+
+<!-- 图片 -->
+<article>
+    <h2>图片</h2>
+    <ul>
+        <li>
+            <span>好看的图片</span>
+            <img src="../../source/1_1.png" alt="这是一个图片" title="好看的图片"/>
+        </li>
+        <li>
+            <span>好看的图片</span>
+            <img src="../../source/1_1.png" alt="这是一个图片" title="好看的图片"/>
+        </li>
+        <li>
+            <span>好看的图片</span>
+            <img src="../../source/1_1.png" alt="这是一个图片" title="好看的图片"/>
+        </li>
+        <li>
+            <span>好看的图片</span>
+            <img src="../../source/1_1.png" alt="这是一个图片" title="好看的图片"/>
+        </li>
+
+    </ul>
+</article>
+
+<!--最后一篇文章-->
+<article>
+    <hgroup>
+        <h2>文章三的一级标题</h2>
+
+        <h3>文章三的二级标题</h3>
+    </hgroup>
+    <section>
+        <span>文章作者</span>
+        <time datetime="2016-3-17">文章发表时间</time>
+    </section>
+    <ol>
+        <li>排名1</li>
+        <li>排名2</li>
+        <li>排名3</li>
+    </ol>
+    <span>下面是一个表格</span>
+    <table>
+        <thead>
+        <tr>
+            <th>表头</th>
+            <th>表头</th>
+            <th>表头</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>单元格内容</td>
+            <td>单元格内容</td>
+            <td><a href="javascript:;;">操作</a></td>
+        </tr>
+        <tr>
+            <td>单元格内容</td>
+            <td>单元格内容</td>
+            <td><a href="javascript:;;">操作</a></td>
+        </tr>
+        <tr>
+            <td>单元格内容</td>
+            <td>单元格内容</td>
+            <td><a href="javascript:;;">操作</a></td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>总计</td>
+            <td colspan="2">1000</td>
+        </tr>
+        </tfoot>
+    </table>
+
+</article>
+
+<!-- 侧栏 -->
+<aside>
+    <h2>这是一个侧栏的标题</h2>
+
+    <form method="post">
+        <div>
+            <div>请输入邮箱地址：</div>
+            <div>
+                <input type="text" value="" placeholder="这是一个邮箱地址">
+            </div>
+        </div>
+        <div>
+            <div>请输入密码：</div>
+            <div>
+                <input type="password" value="" placeholder="密码为6-16为英文数字">
+            </div>
+        </div>
+        <div>
+            <div>请重复输入密码：</div>
+            <div>
+                <input type="password" value="" placeholder="请再次输入">
+            </div>
+        </div>
+        <div>
+            <div>性别：</div>
+            <div>
+                <input type="radio" id="txt_boy" name="txt_sex"><label for="txt_boy">男</label>
+                <input type="radio" id="txt_girl" name="txt_sex"><label for="txt_girl">女</label>
+            </div>
+        </div>
+        <div>
+            <div>城市：</div>
+            <div>
+                <select>
+                    <option selected="selected">北京</option>
+                    <option>上海</option>
+                    <option>重庆</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div>爱好：</div>
+            <div>
+                <input type="checkbox" id="txt_sport" name="txt_favorite" value="运动"><label for="txt_sport">运动</label>
+                <input type="checkbox" id="txt_art" name="txt_favorite" value="艺术"><label for="txt_art">艺术</label>
+                <input type="checkbox" id="txt_science" name="txt_favorite" value="科学"><label
+                    for="txt_science">科学</label>
+            </div>
+        </div>
+        <div>
+            <div>个人描述：</div>
+            <div>
+                <textarea height="100" width="200" placeholder="这是一个多行文本框，输入您的个人描述"></textarea>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="确认提交"/>
+        </div>
+
+    </form>
+</aside>
+</div>
+
+<!-- 底部 -->
+<footer>
+    版权所有&copy;
+</footer>
+
+</body>
+</html>
