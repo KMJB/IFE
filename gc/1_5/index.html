@@ -27,12 +27,12 @@
             }
 
             /* 页面文档容器 */
-            #containter{margin:auto;}
+            #containter{margin:auto;position:relative;}
             #containter article,aside{
-                width:100%;background-color:#fff;box-shadow:2px 2px 2px gray;
+                /*width:100%;*/background-color:#fff;box-shadow:2px 2px 2px gray;
             }
             .airticle-content{padding:20px;margin-top:20px;}
-            .tbList{border-collapse:collapse;width:100%;}
+            .tbList{border-collapse:collapse;/*width:100%;*/}
             .tbList>thead{background-color:#333333;color:#fff;font-weight:bold;}
             .tbList>thead th{border:1px solid gray;text-align:left;}
             .tbList>tbody td{border:1px solid #CCC;}
@@ -56,8 +56,9 @@
                 display:flex;justify-content:center;align-items:center;
                 background-color:#333333;color:#fff;
             }
+            .content{width: 100%}
 
-            @media screen and (min-width: 1900px) {
+            /*@media screen and (min-width: 1900px) {
                 .content{width:1170px}
             }
             @media screen and (max-width: 1650px) {
@@ -71,7 +72,7 @@
             }
             @media screen and (max-width: 800px) {
                 .content{width:600px}
-            }
+            }*/
         </style>
     </head>
     <body>
@@ -92,8 +93,9 @@
             </nav>
         </header>
         <!-- content -->
-        <div id="containter" class="content">
-            
+        <div id="containter" class="content" >
+            <!-- 左侧的3篇文章和10张图片 -->
+            <div id="left" style="width:100%; height:500px;border:1px solid red;margin-left:-480px;padding-left:480px">
                 <!-- article 1 -->
                 <article>
                     <div class="airticle-content">
@@ -153,7 +155,6 @@
                         </figure>
                     </div>
                 </article>
-
                 <!-- article 3 -->
                 <article>
                     <div class="airticle-content">
@@ -209,78 +210,78 @@
                         </table>
                     </div>
                 </article>
-
-                <!-- sidebar -->
-                <aside>
-                    <div class="airticle-content">
-                        <h3>这里以后是一个侧栏，这是侧栏的标题</h3>
-                        <table class="aside-table">
-                            <tr>
-                                <td>请输入邮箱地址</td>
-                                <td>
-                                    <input type="text" placeholder="这是一个文本框" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>邮箱地址请按要求格式输入</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    请输入密码
-                                </td>
-                                <td>
-                                    <input type="password" placeholder="这是一个文本输入框" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>请重复输入密码</td>
-                                <td><input type="password" placeholder="这是一个文本输入框" /></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>密码请为6-16位英文数字</td>
-                            </tr>
-                            <tr>
-                                <td>性别</td>
-                                <td>
-                                    <input type="radio" name="gender" value="1" id="c1718fc120d6" /><label for="c1718fc120d6">男</label>
-                                    <input type="radio" name="gender" value="0" id="c3b25ecafc2f" /><label for="c3b25ecafc2f">女</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>城市</td>
-                                <td>
-                                    <select>
-                                        <option>北京</option>
-                                        <option>天津</option>
-                                        <option>其他</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>爱好</td>
-                                <td>
-                                    <input type="checkbox" name="hobby" value="0" id="0f3b5c73fe9f" /><label for="0f3b5c73fe9f">运动</label>
-                                    <input type="checkbox" name="hobby" value="1" id="9d8ee58ecee1" /><label for="9d8ee58ecee1">艺术</label>
-                                    <input type="checkbox" name="hobby" value="2" id="96801a8b03f8" /><label for="96801a8b03f8">科学</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>个人描述</td>
-                                <td><textarea cols="30" rows="2">这是一个多行输入框，输入你的个人描述</textarea></td>
-                            </tr>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="2">
-                                        <input type="submit" class="btn-submit-aside" value="确认提交" />
-                                    </td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </aside>
             </div>
+            <!-- 右侧的侧栏 -->
+            <aside id="right" style="position:absolute;top:0;right:0;width:480px;height:500px;border:1px solid green">
+                <div class="airticle-content">
+                    <h3>这里以后是一个侧栏，这是侧栏的标题</h3>
+                    <table class="aside-table">
+                        <tr>
+                            <td>请输入邮箱地址</td>
+                            <td>
+                                <input type="text" placeholder="这是一个文本框" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>邮箱地址请按要求格式输入</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                请输入密码
+                            </td>
+                            <td>
+                                <input type="password" placeholder="这是一个文本输入框" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>请重复输入密码</td>
+                            <td><input type="password" placeholder="这是一个文本输入框" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>密码请为6-16位英文数字</td>
+                        </tr>
+                        <tr>
+                            <td>性别</td>
+                            <td>
+                                <input type="radio" name="gender" value="1" id="c1718fc120d6" /><label for="c1718fc120d6">男</label>
+                                <input type="radio" name="gender" value="0" id="c3b25ecafc2f" /><label for="c3b25ecafc2f">女</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>城市</td>
+                            <td>
+                                <select>
+                                    <option>北京</option>
+                                    <option>天津</option>
+                                    <option>其他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>爱好</td>
+                            <td>
+                                <input type="checkbox" name="hobby" value="0" id="0f3b5c73fe9f" /><label for="0f3b5c73fe9f">运动</label>
+                                <input type="checkbox" name="hobby" value="1" id="9d8ee58ecee1" /><label for="9d8ee58ecee1">艺术</label>
+                                <input type="checkbox" name="hobby" value="2" id="96801a8b03f8" /><label for="96801a8b03f8">科学</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>个人描述</td>
+                            <td><textarea cols="30" rows="2">这是一个多行输入框，输入你的个人描述</textarea></td>
+                        </tr>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" class="btn-submit-aside" value="确认提交" />
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </aside>
+        </div>
         
         <!-- footer -->
         <footer>
