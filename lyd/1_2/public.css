@@ -1,0 +1,169 @@
+body{
+    margin: auto;
+    font: 15px/1.6em 'Microsoft YaHei';
+    background-color: #EEEEEE;
+}
+/*µ¼º½À¸*/
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #333333;
+}
+.header_inner{
+    width: 80%;
+    margin: auto;
+}
+.header_inner h1{
+    line-height:30px;
+    color: white;
+    float: left;
+    margin:20px 0;
+}
+.header_inner ul{
+    float: right;
+    margin: 20px 0;
+}
+.header_inner ul li{
+    float: left;
+    margin:0 15px;
+    line-height: 30px;
+}
+.header_inner ul li a{
+    text-decoration: none;
+    color:white;
+}
+/*Ò³Ãæ*/
+.content,.sidebar{
+    margin: auto;
+    width: 85%;
+    background-color: #fff;
+    box-shadow:3px 3px 3px gray;
+}
+.content_inner,.sidebar_inner{
+    margin: auto;
+    width: 97%;
+}
+.imgs_inner{
+    margin: auto;
+    width: 97%;
+}
+.content_inner h2{
+    padding-top: 30px;
+}
+.content_inner h3,.sidebar_inner h3{
+    color: #333333;
+}
+.sidebar_inner h3{
+    padding-top: 30px;
+}
+.content_inner h3+p{
+    color: #333333;
+    font-size: 13px;
+    text-indent: 0;
+}
+.content_inner p {
+    text-indent: 2em;
+}
+.content_inner:last-child{
+    padding-bottom: 30px;
+}
+.imgs_inner:last-child,form:last-child{
+    padding-bottom: 30px;
+}
+.content_inner ul{
+    list-style-type: none;
+}
+.img{
+    border: solid 1px #333333;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    width: 329px;
+}
+.img p{
+    margin: 0;
+    text-align: center;
+    padding-top: 15px;
+}
+.img img{
+    padding: 15px;
+    vertical-align: bottom;
+}
+#tbList,#tbform{
+    border-collapse:collapse;
+    width: 100%;
+}
+#tbList th,#tbList td{
+    border: solid 1px #CCCCCC;
+}
+#tbList>thead{
+    background-color: #333333;
+}
+#tbList>thead th{
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 5px;
+}
+#tbList>tbody td{
+    text-align: left;
+    padding-left: 5px;
+    font-size: 13px;
+}
+#tbList>tbody tr:nth-child(2) td{
+    border-bottom-color: #333333;
+}
+#tbList>tfoot{
+    background-color: #CCCCCC;
+}
+#tbList>tfoot td{
+    font-weight: bold;
+    padding-left: 5px;
+}
+form{
+    margin: 0 20%;
+}
+#tbform{
+    font-size: 14px;
+    line-height: 2.2em;
+}
+#tbform tr>td:first-child{
+    width: 20%;
+    text-align: right;
+    padding-right: 15px;
+}
+#tbform tr>td+td{
+    width: 80%;
+}
+#tbform .remind{
+    color: gray;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+#tbform tr:last-child td:first-child{
+    vertical-align: top;
+}
+input[type="submit"]{
+    width: 100%;
+    background-color: #3355D0;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    line-height: 35px;
+    cursor:pointer;
+    border-radius:5px;
+    border: 0;
+}
+/*footer*/
+.footer{
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    text-align: center;
+}
+.footer p{
+    line-height:30px;
+    padding: 15px 0;
+}
