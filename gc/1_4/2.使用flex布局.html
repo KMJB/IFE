@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <title>使用flex - 定位和居中问题</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            html,body{margin:0;height:100%;}
+            body{font-family:Arial;font-size:14px}
+            
+            #containter{width:100%;height:100%;display:flex;justify-content:center;align-items:center;}
+            .box{
+                width:400px;height:200px;background-color:#CCCCCC;display:flex;justify-content:space-between;
+            }
+            
+            .circle1{                
+                width:50px;height:50px;background-color:#FFCC00;
+                border-radius:0px 0px 90px 0px;
+            }
+            .circle2{                
+                width:50px;height:50px;background-color:#FFCC00;
+                border-radius:90px 0px 0px 0px;
+                align-self:flex-end;
+            }
+
+        </style>
+    </head>
+    <body>        <!-- 使用flex -->
+        <div id="containter" >
+            <div class="box">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+            </div>
+        </div>    </body></html>
