@@ -1,13 +1,13 @@
 body{
     margin: auto;
     font: 15px/1.6em 'Microsoft YaHei';
-    background-color: #EEEEEE;
+    background-color: #EEE;
 }
 /*µ¼º½À¸*/
 .header{
     width: 100%;
     height: 70px;
-    background-color: #333333;
+    background-color: #333;
 }
 .header_inner{
     width: 80%;
@@ -32,6 +32,12 @@ body{
     text-decoration: none;
     color:white;
 }
+.header_inner ul li a:hover{
+    color: blue;
+}
+.header_inner ul li a.enter{
+    color: blue;
+}
 /*Ò³Ãæ*/
 .content,.sidebar{
     margin: auto;
@@ -51,13 +57,14 @@ body{
     padding-top: 30px;
 }
 .content_inner h3,.sidebar_inner h3{
-    color: #333333;
+    color: #333;
+    font-size: 17px;
 }
 .sidebar_inner h3{
     padding-top: 30px;
 }
 .content_inner h3+p{
-    color: #333333;
+    color: #333;
     font-size: 13px;
     text-indent: 0;
 }
@@ -74,7 +81,7 @@ body{
     list-style-type: none;
 }
 .img{
-    border: solid 1px #333333;
+    border: solid 1px #333;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 40px;
@@ -89,15 +96,15 @@ body{
     padding: 15px;
     vertical-align: bottom;
 }
-#tbList,#tbform{
+#tbList,#tb_form{
     border-collapse:collapse;
     width: 100%;
 }
 #tbList th,#tbList td{
-    border: solid 1px #CCCCCC;
+    border: solid 1px #CCC;
 }
 #tbList>thead{
-    background-color: #333333;
+    background-color: #333;
 }
 #tbList>thead th{
     color: white;
@@ -111,10 +118,10 @@ body{
     font-size: 13px;
 }
 #tbList>tbody tr:nth-child(2) td{
-    border-bottom-color: #333333;
+    border-bottom-color: #333;
 }
 #tbList>tfoot{
-    background-color: #CCCCCC;
+    background-color: #CCC;
 }
 #tbList>tfoot td{
     font-weight: bold;
@@ -123,24 +130,24 @@ body{
 form{
     margin: 0 20%;
 }
-#tbform{
+#tb_form{
     font-size: 14px;
     line-height: 2.2em;
 }
-#tbform tr>td:first-child{
+#tb_form tr>td:first-child{
     width: 20%;
     text-align: right;
     padding-right: 15px;
 }
-#tbform tr>td+td{
+#tb_form tr>td+td{
     width: 80%;
 }
-#tbform .remind{
+#tb_form .remind{
     color: gray;
     font-size: 12px;
     padding-bottom: 5px;
 }
-#tbform tr:last-child td:first-child{
+#tb_form tr:last-child td:first-child{
     vertical-align: top;
 }
 input[type="submit"]{
@@ -157,7 +164,7 @@ input[type="submit"]{
 /*footer*/
 .footer{
     width: 100%;
-    background-color: #333333;
+    background-color: #333;
     color: white;
     font-weight: bold;
     height: 60px;
