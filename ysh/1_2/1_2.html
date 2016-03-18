@@ -1,323 +1,390 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>零基础HTML编码</title>
 
     <style>
-body{
-/* background: #DEDEDE;*/
-    background: #333;
-}
-        nav{
+        body {
+            background: #DEDEDE;
+            /* background: #333;*/
+            width: 100%;
+        }
+
+        nav {
             background: #333;
             width: 100%;
             height: 64px;
         }
-.nav_li {
-    float: left;
-margin: 0px 15px ;
-}
 
-.nav_li_a{
-    color: #ffffff;
+        .nav_li {
+            float: left;
+            margin: 0px 15px;
+        }
 
-}
-.nav_img{
-    float: left;
+        .nav_li_a {
+            color: #ffffff;
+            text-decoration: none;
+        }
 
-}
-        .nav_ul{
+        .nav_img {
+            float: left;
+
+        }
+
+        .nav_ul {
             float: right;
 
         }
 
-article{
-width: 1198px;
-    padding: 20px 20px;
-background: #ffffff;
-border-bottom: 2px solid #848484;
-    border-right: 2px solid #848484;
-    margin: 20px 22px;
-}
+        .nav_li_clike {
+            color: #848484;
+            text-decoration: none;
+        }
 
-.contend_div{
-   /* width:1240px;*/
-    width: 1284px;
-    margin: 0 auto;
-    background: #DEDEDE;
-padding: 1px 0px;
-}
+        article {
+            /*width: 1198px;*/
+            width: 1250px;
+            padding: 20px 20px;
+            background: #ffffff;
+            border-bottom: 2px solid #848484;
+            border-right: 2px solid #848484;
+            /*margin: 20px 22px ;*/
+            margin: 20px auto;
 
-.img_min{
-    width: 100px;
-    height: 150px;
-margin-left: 4px;
-}
-.div_min figcaption{
+        }
 
-    margin-left: 5px;
-}
-        .div_min{
-border: 1px solid black;
-width: 108px;
+        /*   .contend_div {
+             width:1240px;
+            width: 1284px;
+            margin: 0 auto;
+            background: #DEDEDE;
+            padding: 1px 0px;
+        }*/
+
+        .img_min {
+            width: 104px;
+            height: 80px;
+            margin-left: 4px;
+            margin: 19px 9px auto;
+        }
+
+        .div_min figcaption {
+
+            font-size: 13px;
+            /* margin-left: 5px; */
+            margin: 10px 17px -10px 18px;;
+            text-align: center;
+        }
+
+        .div_min {
+            border: 1px solid black;
+            width: 121px;
+            height: 125px;
             margin-top: 10px;
         }
 
-._table{
-    width: 1198px;
-    height: 147px;
-    border-spacing: 0px;
-    border-color: #CCCCCC;
-}
-thead{
-    background: #333333;
-    color: #ffffff;
-text-align: left;
-}
-td{
-    border-color: #CCCCCC;
-
-}
-tfoot{
-    background: #CCCCCC;
-    color: #333333;
-font-weight: bold;
-}
-        .h2_left{
-   border-left: 3px solid #848484;
-padding: 8px 11px;
-font-size: 16px;
+        ._table {
+            width: 1198px;
+            height: 147px;
+            border-spacing: 0px;
+            border-color: #CCCCCC;
         }
-        
-        .div_from{
+
+        thead {
+            background: #333333;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        td {
+            border-color: #CCCCCC;
+
+        }
+
+        tfoot {
+            background: #CCCCCC;
+            color: #333333;
+            font-weight: bold;
+        }
+
+        .h2_left {
+            border-left: 3px solid #848484;
+            padding: 8px 11px;
+            font-size: 16px;
+        }
+
+        .div_from {
 
             margin-left: 277px;
 
         }
-.P_txtEmail{
-    margin-left: 105px;
-    font-size: 12px;
-margin: -3px 0px 28px 103px;
 
-}
-.P_txtpwd{
+        .P_txtEmail {
+            margin-left: 105px;
+            font-size: 12px;
+            margin: -3px 0px 28px 103px;
 
-    font-size: 12px;
-    margin: -25px 0px 28px 0px;
+        }
 
+        /*.P_txtpwd {
 
-}
-        article .div_from label{
+            font-size: 12px;
+            margin: -25px 0px 28px 0px;
+
+        }*/
+
+        article .div_from label {
             float: left;
             display: block;
             width: 103px;
             font-size: 12px;
-text-align: right;
+            text-align: right;
         }
-.P_txt{
-    margin: -10px 0px 28px 103px;
-font-size: 12px;
-}
-        .span_like{
+
+        .P_txt {
+            margin: -10px 0px 28px 103px;
+            font-size: 12px;
+            color: #848484;
+        }
+
+        .span_like {
             font-size: 12px;
             display: block;
             float: left;
             margin: 0px 10px;
         }
-textarea{
-    height: 100px;
-    width: 768px;
 
-}
-.chec_like{
+        textarea {
+            height: 100px;
+            width: 768px;
+
+        }
+
+        .chec_like {
             float: left;
 
         }
 
-        #sub{
+        #sub {
             height: 38px;
             width: 1178px;
-            background:#3355D0;
+            background: #3355D0;
             color: #FFFFFF;
             border-radius: 10px;
 
         }
-footer{
-    text-align:center;
-    background: #000;
-    color: #FFFFFF;
-  line-height: 60px;
-    width: 1284px;
-    height: 70px;
-    margin: 0px auto;
-}
+
+        footer {
+            text-align: center;
+            background: #000;
+            color: #FFFFFF;
+            line-height: 60px;
+            /*width: 1284px;*/
+            width: 100%;
+            height: 70px;
+            margin: 0px auto;
+        }
+
+        .p_title {
+            font-size: 14px;
+            color: #686F75;
+        }
+
+        .p_author {
+            font-size: 12px;
+            color: #696983;
+
+        }
     </style>
 </head>
 <body>
 
 <!-- navigation -->
 <nav>
-    <img class="nav_img" src="../../source/baidu_log.png" />
+    <img class="nav_img" src="../../source/baidu_log.png"/>
     <ul class="nav_ul">
         <li class="nav_li"><a class="nav_li_a" href="#">导航链接一</a></li>
-        <li class="nav_li"><a  class="nav_li_a" href="#">导航链接二</a></li>
-        <li class="nav_li"><a  class="nav_li_a" href="#">导航链接三</a></li>
-        <li class="nav_li"><a  class="nav_li_a" href="#">导航链接四</a></li>
+        <li class="nav_li"><a class="nav_li_a" href="#">导航链接二</a></li>
+        <li class="nav_li"><a class="nav_li_a" href="#">导航链接三</a></li>
+        <li class="nav_li"><a class="nav_li_clike" href="#">导航链接四</a></li>
     </ul>
 </nav>
 <div class="contend_div">
-<!-- article 1 -->
-<article>
-    <h2>文章一级标题</h2>
-    <h3>文章二级标题</h3>
-    <p>文章作者 文章发表时间</p>
+    <!-- article 1 -->
+    <article>
+        <h2>文章一级标题</h2>
 
-    <p>
-        曲曲折折的荷塘上面，弥望的是田田的叶子。叶子出水很高，<b>像亭亭的舞女的裙</b>。层层的叶子中间，零星地点缀着些白花，有袅娜地开着的，有羞涩地打着朵儿的；正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。
-        <br />
-        换行了
-        <br />
-        微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，<a href="http://ife.baidu.com" target="_blank">这便宛然有了一道凝碧的波痕</a>。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色；而叶子却更见风致了。
-    </p>
+        <p class="p_title">文章二级标题</p>
 
-    <img src="../../source/yanxihu.jpg" />
-    <p>月光如流水一般，静静地泻在这一片叶子和花上。薄薄的青雾浮起在荷塘里。叶子和花仿佛在牛乳中洗过一样；又像笼着轻纱的梦。虽然是满月，天上却有一层淡淡的云，所以不能朗照；但我以为这恰是到了好处——酣眠固不可少，小睡也别有风味的。月光是隔了树照过来的，高处丛生的灌木，落下参差的斑驳的黑影，峭楞楞如鬼一般；弯弯的杨柳的稀疏的倩影，却又像是画在荷叶上。塘中的月色并不均匀；但光与影有着和谐的旋律，如梵婀玲上奏着的名曲。</p>
-</article>
-<!-- article 2 -->
-<article>
-    <h2>另一篇文章一级标题</h2>
-    <h3>文章二级标题</h3>
-    <p>文章作者 文章发表时间</p>
-    <p>
-        秋天，无论在什么地方的秋天，总是好的；可是啊，北国的秋，却特别地来得清，来得静，来得悲凉。我的不远千里，要从杭州赶上青岛，更要从青岛赶上北平来的理由，也不过想饱尝一尝这“秋”，这故都的秋味。
-    </p>
-    <p>
-        江南，秋当然也是有的；但草木雕得慢，空气来得润，天的颜色显得淡，并且又时常多雨而少风；一个人夹在苏州上海杭州，或厦门香港广州的市民中间，浑浑沌沌地过去，只能感到一点点清凉，秋的味，秋的色，秋的意境与姿态，总看不饱，尝不透，赏玩不到十足。秋并不是名花，也并不是美酒，那一种半开，半醉的状态，在领略秋的过程上，是不合适的。
-    </p>
-    <p>
-        不逢北国之秋，已将近十余年了。在南方每年到了秋天，总要想起陶然亭的芦花，<a href="http://ife.baidu.com">钓鱼台的柳影</a>，西山的虫唱，玉泉的夜月，潭柘寺的钟声。<b>在北平即使不出门去罢</b>，就是在皇城人海之中，租人家一椽破屋来住着，早晨起来，泡一碗浓茶、向院子一坐，你也能看得到很高很高的碧绿的天色，听得到青天下驯鸽的飞声。从槐树叶底，朝东细数着一丝一丝漏下来的日光，或在破壁腰中，静对着象喇叭似的牵牛花（朝荣）的蓝朵，自然而然地也能够感觉到十分的秋意。说到了牵牛花，我以为以蓝色或白色者为佳，紫黑色次之，淡红色最下。最好，还要在牵牛花底，教长着几根疏疏落落的尖细且长的秋草，使作陪衬。
-    </p>
-    <img src="../../source/xihu.jpg" />
-    <ul>
-        <li>列表项目一</li>
-        <li>列表项目二</li>
-        <li>列表项目三</li>
-    </ul>
+        <p class="p_author">文章作者 文章发表时间</p>
 
-    <section>
+        <p>
+            曲曲折折的荷塘上面，弥望的是田田的叶子。叶子出水很高，<b>像亭亭的舞女的裙</b>。层层的叶子中间，零星地点缀着些白花，有袅娜地开着的，有羞涩地打着朵儿的；正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。
+            <br/>
+            换行了
+            <br/>
+            微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，<a href="http://ife.baidu.com"
+                                                                                       target="_blank">这便宛然有了一道凝碧的波痕</a>。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色；而叶子却更见风致了。
+        </p>
+
+        <img src="../../source/yanxihu.jpg"/>
+
+        <p>
+            月光如流水一般，静静地泻在这一片叶子和花上。薄薄的青雾浮起在荷塘里。叶子和花仿佛在牛乳中洗过一样；又像笼着轻纱的梦。虽然是满月，天上却有一层淡淡的云，所以不能朗照；但我以为这恰是到了好处——酣眠固不可少，小睡也别有风味的。月光是隔了树照过来的，高处丛生的灌木，落下参差的斑驳的黑影，峭楞楞如鬼一般；弯弯的杨柳的稀疏的倩影，却又像是画在荷叶上。塘中的月色并不均匀；但光与影有着和谐的旋律，如梵婀玲上奏着的名曲。</p>
+    </article>
+    <!-- article 2 -->
+    <article>
+        <h2>另一篇文章一级标题</h2>
+
+        <p class="p_title">文章二级标题</p>
+
+        <p class="p_author">文章作者 文章发表时间</p>
+
+        <p>
+            秋天，无论在什么地方的秋天，总是好的；可是啊，北国的秋，却特别地来得清，来得静，来得悲凉。我的不远千里，要从杭州赶上青岛，更要从青岛赶上北平来的理由，也不过想饱尝一尝这“秋”，这故都的秋味。
+        </p>
+
+        <p>
+            江南，秋当然也是有的；但草木雕得慢，空气来得润，天的颜色显得淡，并且又时常多雨而少风；一个人夹在苏州上海杭州，或厦门香港广州的市民中间，浑浑沌沌地过去，只能感到一点点清凉，秋的味，秋的色，秋的意境与姿态，总看不饱，尝不透，赏玩不到十足。秋并不是名花，也并不是美酒，那一种半开，半醉的状态，在领略秋的过程上，是不合适的。
+        </p>
+
+        <p>
+            不逢北国之秋，已将近十余年了。在南方每年到了秋天，总要想起陶然亭的芦花，<a href="http://ife.baidu.com">钓鱼台的柳影</a>，西山的虫唱，玉泉的夜月，潭柘寺的钟声。<b>在北平即使不出门去罢</b>，就是在皇城人海之中，租人家一椽破屋来住着，早晨起来，泡一碗浓茶、向院子一坐，你也能看得到很高很高的碧绿的天色，听得到青天下驯鸽的飞声。从槐树叶底，朝东细数着一丝一丝漏下来的日光，或在破壁腰中，静对着象喇叭似的牵牛花（朝荣）的蓝朵，自然而然地也能够感觉到十分的秋意。说到了牵牛花，我以为以蓝色或白色者为佳，紫黑色次之，淡红色最下。最好，还要在牵牛花底，教长着几根疏疏落落的尖细且长的秋草，使作陪衬。
+        </p>
+        <img src="../../source/xihu.jpg"/>
+        <ul>
+            <li>列表项目一</li>
+            <li>列表项目二</li>
+            <li>列表项目三</li>
+        </ul>
+
+
+    </article>
+    <article>
         <h2>图片</h2>
-        <div class="div_min" >
-            <figcaption>好看的图片</figcaption>
-            <img class="img_min" src="../../source/xihu.jpg" />
-        </div>
-        <div class="div_min">
-            <figcaption>好看的图片</figcaption>
-            <img class="img_min" src="../../source/xihu.jpg" />
-        </div>
-        <div class="div_min">
-            <figcaption>好看的图片</figcaption>
-            <img class="img_min" src="../../source/xihu.jpg" />
-        </div>
-    </section>
-</article>
-<!-- article 3 -->
-<article>
-    <h2>最后一篇文章一级标题</h2>
-    <h3>文章二级标题</h3>
-    <p>文章作者 文章发表时间</p>
 
-    <ol>
-        <li>排名1</li>
-        <li>排名2</li>
-        <li>排名3</li>
-    </ol>
+        <div class="div_min">
+            <figcaption>好看的图片</figcaption>
+            <img class="img_min" src="../../source/xihu.jpg"/>
+        </div>
+        <div class="div_min">
+            <figcaption>好看的图片</figcaption>
+            <img class="img_min" src="../../source/xihu.jpg"/>
+        </div>
+        <div class="div_min">
+            <figcaption>好看的图片</figcaption>
+            <img class="img_min" src="../../source/xihu.jpg"/>
+        </div>
+    </article>
+    <!-- article 3 -->
+    <article>
+        <h2>最后一篇文章一级标题</h2>
+
+        <p class="p_title">文章二级标题</p>
+
+        <p class="p_author">文章作者 文章发表时间</p>
+
+        <ol>
+            <li>排名1</li>
+            <li>排名2</li>
+            <li>排名3</li>
+        </ol>
             <span>
                 下面是一个表格，给表格添加了一个border="1" 好让你看出是一个表格
             </span>
 
-    <table class="_table" border="1">
-        <thead>
-        <tr>
-            <th>表头</th>
-            <th>表头</th>
-            <th>表头</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>表内容单元格</td>
-            <td>表内容单元格</td>
-            <td><a href="#">操作</a></td>
-        </tr>
-        <tr>
-            <td>表内容单元格</td>
-            <td>表内容单元格</td>
-            <td><a href="#">操作</a></td>
-        </tr>
-        <tr>
-            <td>表内容单元格</td>
-            <td>表内容单元格</td>
-            <td><a href="#">操作</a></td>
-        </tr>
-        <tr>
-            <td>表内容单元格</td>
-            <td>表内容单元格</td>
-            <td><a href="#">操作</a></td>
-        </tr>
-        </tbody>
-        <tfoot>
-        <tr>
-            <td>总计</td>
-            <td colspan="2">1000</td>
-        </tr>
-        </tfoot>
-    </table>
-</article>
+        <table class="_table" border="1">
+            <thead>
+            <tr>
+                <th>表头</th>
+                <th>表头</th>
+                <th>表头</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td>总计</td>
+                <td colspan="2">1000</td>
+            </tr>
+            </tfoot>
+        </table>
+    </article>
 
-<!-- sidebar -->
-<article>
-   <h2 class="h2_left">这里以后是一个侧栏，这是侧栏的标题</h2>
-  <!--  <h2>侧栏注册窗口标题</h2>-->
-    <div class="div_from">
-    <p><label>请输入邮箱地址：</label><input type="text" placeholder="这是一个文本框" /></p>
-    <p class="P_txtEmail">邮箱地址请按要求格式输入</p>
+    <!-- sidebar -->
+    <form>
+        <article>
+            <h2 class="h2_left">这里以后是一个侧栏，这是侧栏的标题</h2>
+            <!--  <h2>侧栏注册窗口标题</h2>-->
+            <div class="div_from">
+                <p><label>请输入邮箱地址：</label><input type="text" value="这是一个文本框"/></p>
 
-    <p>
-        <label>  请输入密码：</label><input type="password" placeholder="********" />
-    </p><br/>
-        <p class="P_txtpwd">
-        <label>请重复输入密码：</label><input type="password" placeholder="********" />
-    </p>
-    <p class="P_txt">密码请为6-16位英文数字</p>
+                <p class="P_txt">邮箱地址请按要求格式输入</p>
+
+                <p>
+                    <label> 请输入密码：</label><input type="password" value="********"/>
+                </p><br/>
+
+                <p class="P_txtpwd">
+                    <label>请重复输入密码：</label><input type="password" value="********"/>
+                </p>
+
+                <p class="P_txt">密码请为6-16位英文数字</p>
 
 
-       <p> <label> 性别： </label>
-        <input type="radio" name="gender" value="1" id="c1718fc120d6" /><span for="c1718fc120d6">男</span>
-        <input type="radio" name="gender" value="0" id="c3b25ecafc2f" /><span for="c3b25ecafc2f">女</span>
-    </p>
+                <p><label> 性别： </label>
+                    <input type="radio" name="gender" value="1" id="c1718fc120d6"/><span for="c1718fc120d6">男</span>
+                    <input type="radio" name="gender" value="0" id="c3b25ecafc2f"/><span for="c3b25ecafc2f">女</span>
+                </p>
 
-      <p> <label> 城市： </label>
-        <select>
-            <option>北京</option>
-            <option>天津</option>
-            <option>其他</option>
-        </select>
-      </p>
-      <p>  <label> 爱好： </label>
-        <input type="checkbox" class="chec_like" name="hobby" value="0" id="0f3b5c73fe9f" /><span class="span_like" for="0f3b5c73fe9f">运动</span>
-        <input type="checkbox" class="chec_like" name="hobby" value="1" id="9d8ee58ecee1" /><span class="span_like" for="9d8ee58ecee1">艺术</span>
-        <input type="checkbox" class="chec_like" name="hobby" value="2" id="96801a8b03f8" /><span class="span_like" for="96801a8b03f8">科学</span>
-      </p>
-        <br/>
-        <p>
-        <label>个人描述： </label>
-        <textarea cols="30" rows="2" placeholder="这是一个多行输入框，输入你的个人描述"></textarea>
-        </p>
-    </div>
-        <input id="sub" type="submit" value="确认提交" />
+                <p><label> 城市： </label>
+                    <select>
+                        <option>北京</option>
+                        <option>天津</option>
+                        <option>其他</option>
+                    </select>
+                </p>
+                <p><label> 爱好： </label>
+                    <input type="checkbox" class="chec_like" name="hobby" value="0" id="0f3b5c73fe9f"/><span
+                            class="span_like" for="0f3b5c73fe9f">运动</span>
+                    <input type="checkbox" class="chec_like" name="hobby" value="1" id="9d8ee58ecee1"/><span
+                            class="span_like" for="9d8ee58ecee1">艺术</span>
+                    <input type="checkbox" class="chec_like" name="hobby" value="2" id="96801a8b03f8"/><span
+                            class="span_like" for="96801a8b03f8">科学</span>
+                </p>
+                <br/>
 
-</article>
+                <p>
+                    <label>个人描述： </label>
+                    <textarea cols="30" rows="2" placeholder="这是一个多行输入框，输入你的个人描述"></textarea>
+                </p>
+            </div>
+            <input id="sub" type="submit" value="确认提交"/>
+
+        </article>
+    </form>
 </div>
 <!-- footer -->
 <footer>版权所有&copy;</footer>
