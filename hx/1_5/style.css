@@ -1,0 +1,307 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,button,textarea,p,blockquote,figure,th,td,header,footer,section,aside,tbody,tfoot,thead,caption,label,table
+{
+    margin:0;
+    padding:0
+}
+
+fieldset,img
+{
+    border:0
+}
+
+img
+{
+    vertical-align:middle
+}
+
+em
+{
+    font-style:normal;
+    font-size:12px
+}
+
+input,button,textarea,select,optgroup,option
+{
+    font-family:inherit;
+    font-size:inherit;
+    font-style:inherit;
+    font-weight:inherit
+}
+
+input,button,textarea,select
+{
+    *font-size:100%
+}
+
+body,html
+{
+    font-family:"Microsoft Yahei";
+    background:#DEDEDE;
+    line-height:1.5;
+    width:100%
+}
+
+ol,ul
+{
+    list-style:none
+}
+
+table
+{
+    border-collapse:collapse;
+    border-spacing:0
+}
+
+header
+{
+    width:100%;
+    height:56px;
+    background:#333
+}
+
+nav
+{
+    width:90%;
+    max-width:90%;
+    min-width:90%;
+    margin-left:auto;
+    margin-right:auto
+}
+
+nav ul
+{
+    float:right
+}
+
+nav ul >li
+{
+    float:left;
+    margin-left:10px
+}
+
+nav ul >li >a
+{
+    float:left;
+    line-height:56px;
+    cursor:pointer;
+    color:#fff;
+    padding:0 10px;
+    min-width:39px;
+    font-size:14px
+}
+
+nav ul >li >a:hover
+{
+    color:#ddd;
+    background-color:#000
+}
+
+main
+{
+    margin-right:380px;
+    margin-top:20px;
+    _zoom:1
+}
+
+main:after
+{
+    position:relative;
+    display:block;
+    content:"";
+    clear:both
+}
+
+section,aside
+{
+    height:auto;
+    background:#fff;
+    border:1px solid #ddd;
+    -webkit-box-shadow:2px 2px 2px #949494;
+    -moz-box-shadow:2px 2px 2px #949494;
+    box-shadow:2px 2px 2px #949494
+}
+
+section
+{
+    width:auto;
+    padding:30px 20px;
+    margin-left:20px
+}
+
+section hgroup h3,section em,em
+{
+    color:gray
+}
+
+section figure
+{
+    margin:10px
+}
+
+section figure img
+{
+    width:100%;
+    height:auto
+}
+
+section hgroup h3
+{
+    font-size:18px
+}
+
+section p
+{
+    text-indent:2em
+}
+
+section:nth-child(4) ul>li
+{
+    display:absolute;
+    text-align:center;
+    margin:20px 10px;
+    border:1px solid #ddd
+}
+
+section:nth-child(4) ul>li figure img
+{
+    width:100%
+}
+
+section:nth-child(4) ul>li
+{
+    display:inline-block;
+    width:100%;
+    height:auto
+}
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+    section:nth-child(4) ul>li
+    {
+        width:50%
+    }
+}
+
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+    section:nth-child(4) ul>li
+    {
+        width:33.3%;
+        font-size:12px
+    }
+}
+
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+    section:nth-child(4) ul>li
+    {
+        width:30%
+    }
+}
+
+section table
+{
+    width:100%;
+    max-width:100%
+}
+
+section table caption
+{
+    padding-top:8px;
+    padding-bottom:8px;
+    color:#777;
+    text-align:left
+}
+
+section table >thead >tr >th
+{
+    padding:8px;
+    vertical-align:top;
+    text-align:left;
+    background-color:#000;
+    color:#fff;
+    border-top:1px solid #ddd
+}
+
+section table >tbody >tr >td
+{
+    padding:3px 5px
+}
+
+section table >tfoot >tr >td
+{
+    background-color:#888
+}
+
+aside
+{
+    position:absolute;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    right:20px;
+    width:350px;
+    float:right;
+    padding-left:10px
+}
+
+aside h2
+{
+    border-left:3px solid #ddd;
+    margin-top:20px;
+    padding:5px;
+    font-size:18px;
+    line-height:24px
+}
+
+aside form table
+{
+    display:block;
+    text-align:left;
+    width:350px;
+    font-size:14px
+}
+
+aside form td
+{
+    display:inline-block;
+    padding-top:7px;
+    margin-bottom:0;
+    margin-left:20px;
+    text-align:right;
+    width:112px
+}
+
+aside form td:nth-child(2n)
+{
+    text-align:left;
+    width:195px
+}
+
+aside form textarea
+{
+    width:170px;
+    height:100px
+}
+
+aside form >input:last-child
+{
+    display:block;
+    width:90%;
+    padding:8px;
+    margin:10px auto 20px;
+    background-color:#4A4AC5;
+    color:#fff;
+    border-color:transparent;
+    border-radius:10px
+}
+
+footer
+{
+    position:relative;
+    clear:both;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    background-color:#000;
+    text-align:center;
+    color:#fff;
+    font-size:12px
+}
