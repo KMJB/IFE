@@ -1,6 +1,6 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -75,10 +75,10 @@ header nav a:hover {
     height: 150px;
     margin-left: 40px;
     margin-top: 20px;
+
 }
 
 .div-container figure ul > li span {
-    margin-top: 10px;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -88,7 +88,8 @@ header nav a:hover {
     width: 100px;
     height: 100px;
     display: block;
-    margin: 0px auto;
+    margin: 0 auto;
+    vertical-align: middle;
 }
 
 .div-container article ol {
