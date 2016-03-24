@@ -1,0 +1,32 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.main{
+    height:200px;
+    width:400px;
+    background-color:#ccc;
+    overflow: hidden;
+    position:absolute;
+    /*position:fixed; 这个也可以*/
+    left:50%;
+    top:50%;
+    margin-top:-100px;
+    margin-left:-200px;
+}
+.circle{
+    width:100px;
+    height:100px;
+    background-color:#fc0;
+    border-radius:50px;
+}
+.top{
+    position:absolute;
+    top:-50px;
+    left:-50px;
+}
+.bottom{
+    position:absolute;
+    bottom:-50px;
+    right:-50px;
+}
