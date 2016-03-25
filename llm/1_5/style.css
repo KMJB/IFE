@@ -12,6 +12,7 @@ body {
 header {
     height: 64px;
     background-color: #333;
+    min-width:500px;
 }
 
 header img {
@@ -20,15 +21,15 @@ header img {
 }
 
 header nav {
-    padding-right: 40px;
     float: right;
+    padding-right: 40px;
 }
 
 header nav a {
-    line-height: 64px;
     margin-left: 20px;
     color: #fff;
     text-decoration: none;
+    line-height: 64px;
 }
 
 header nav a:hover {
@@ -37,16 +38,29 @@ header nav a:hover {
 
 /* 中间内容区域 */
 .div-container {
-    font-size: 15px;
-    width: 96%;
     margin: 0 auto;
+    width: 96%;
+    font-size: 15px;
+    min-width:500px;
+}
+.content-left{
+   margin-right:360px;
+}
+.content-right{
+  float:right;
+    width:300px;
+    margin: 0px auto;
+    padding: 30px 20px;
+    line-height: 28px;
+    background-color: #fff;
 }
 
-.div-container article, aside, figure {
-    background-color: #fff;
+
+.div-container article, figure {
     margin: 20px auto;
     padding: 30px 20px;
     line-height: 28px;
+    background-color: #fff;
 }
 
 .div-container article h3 {
@@ -68,15 +82,23 @@ header nav a:hover {
     list-style: none;
 }
 
+figure:after{
+   clear:both;
+    content:"";
+    display:block;
+}
+
 .div-container figure ul > li {
-    list-style: none;
-    border: 1px solid #999;
-    width: 150px;
-    height: 150px;
+    float:left;
     margin-left: 40px;
     margin-top: 20px;
-
+    width: 150px;
+    height: 150px;
+    list-style: none;
+    border: 1px solid #999;
 }
+
+
 
 .div-container figure ul > li span {
     display: inline-block;
@@ -85,10 +107,10 @@ header nav a:hover {
 }
 
 .div-container figure ul > li img {
+    margin: 0 auto;
+    display: block;
     width: 100px;
     height: 100px;
-    display: block;
-    margin: 0 auto;
     vertical-align: middle;
 }
 
@@ -98,18 +120,18 @@ header nav a:hover {
 }
 
 .tb_list {
-    border-collapse:collapse;
     width: 100%;
     text-align:left;
+    border-collapse:collapse;
 }
 .tb_list thead tr{
-    background-color:#000;
     color:#fff;
+    background-color:#000;
     font-weight:bold;
 }
 .tb_list th,td{
-    border:1px solid #999;
     padding-left:10px;
+    border:1px solid #999;
 }
 .tb_list tfoot tr{
     background-color:#999;
@@ -118,9 +140,9 @@ header nav a:hover {
 }
 /* 侧栏 */
 aside h2{
-    border-left:3px solid #999;
     padding-left:10px;
     font-size:16px;
+    border-left:3px solid #999;
 }
 aside form{
     margin-top:20px;
@@ -130,15 +152,15 @@ aside form{
     min-height:30px;
 }
 .form-item .item-left{
-    display:inline-block;
-    width:30%;
-    height:100%;
     float:left;
+    display:inline-block;
+    width:40%;
+    height:100%;
     text-align:right;
 }
 .form-item .item-right{
     display:inline-block;
-    width:70%;
+    width:60%;
     height:100%;
 }
 .form-item .item-right label{
@@ -152,19 +174,16 @@ aside form{
     width:90%;
     height:100px;
 }
-aside form div:last-child{
-
-}
 aside form input[type="submit"]{
     width:100%;
     height:40px;
     color:#fff;
     background-color:#2C4CCB;
+    cursor:pointer;
     font-weight:bold;
+    font-size:16px;
     border:0px;
     border-radius:10px;
-    cursor:pointer;
-    font-size:16px;
 
 }
 
