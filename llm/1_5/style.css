@@ -11,8 +11,8 @@ body {
 /* 头部 */
 header {
     height: 64px;
-    background-color: #333;
     min-width:500px;
+    background-color: #333;
 }
 
 header img {
@@ -40,17 +40,17 @@ header nav a:hover {
 .div-container {
     margin: 0 auto;
     width: 96%;
-    font-size: 15px;
     min-width:500px;
+    font-size: 15px;
 }
 .content-left{
    margin-right:360px;
 }
 .content-right{
-  float:right;
-    width:300px;
+    float:right;
     margin: 0px auto;
     padding: 30px 20px;
+    width:300px;
     line-height: 28px;
     background-color: #fff;
 }
