@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <title>task_1_4</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-</head>
-<body>
-<div class="main">
-    <div class="top circle"></div>
-    <div class="bottom circle"></div>
-</div>
-<div style="margin-left:20px;margin-top:20px;">
-    <p>
-        <strong>实现思路：</strong>
-    </p>
-    <p>
-        html结构：页面中需要有个主的div，里面放置两个div，用来实现四分之一的扇形效果。
-    </p>
-    <p style="margin-top:20px;">
-        <strong>css实现</strong><br />
-        1、定位主div：<br />
-           &nbsp;&nbsp;将div设置为定位元素，相对于浏览器窗口进行定位。position可以为absolute、fixed；<br />
-        &nbsp;&nbsp;垂直位置 =  50% top  减去 自身的二分之一高度<br />
-        &nbsp;&nbsp;水平位置 =  50% left 减去 自身的二分之一宽度<br />
-        2、定位两个扇形的位置<br />
-        &nbsp;&nbsp;通过实例可以得出，这两个div是一个边长为100px的正方形。设置div的border-radius，变为正圆。<br />
-        &nbsp;&nbsp;之后利用absolute，相对主div进行定位即可。
-    </p>
-</div>
-</body>
-</html>
+    <!--   <link rel="stylesheet" type="text/css" href="style_hx.css"/> -->
+  </head>
+  <body>
+  <div class="main">
+      <div class="top circle"></div>
+      <div class="bottom circle"></div>
+  </div>
+  <div style="margin-left:20px;margin-top:20px;">
+      <p>
+          <strong>固定高宽的情况：</strong>
+      </p>
+      <p>
+          html结构：页面中需要有个主的div，里面放置两个div，用来实现四分之一的扇形效果。
+      </p>
+      <p style="margin-top:20px;">
+          <strong>css实现</strong><br />
+          1、定位主div：<br />
+             &nbsp;&nbsp;将div设置为定位元素，相对于浏览器窗口进行定位。position可以为absolute、fixed；<br />
+          &nbsp;&nbsp;垂直位置 =  50% top  减去 自身的二分之一高度<br />
+          &nbsp;&nbsp;水平位置 =  50% left 减去 自身的二分之一宽度<br />
+          2、定位两个扇形的位置<br />
+          &nbsp;&nbsp;通过实例可以得出，这两个div是一个边长为100px的正方形。设置div的border-radius，变为正圆。<br />
+          &nbsp;&nbsp;之后利用absolute，相对主div进行定位即可。
+      </p>
+  </div>
+  </body>
+  </html>
