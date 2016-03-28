@@ -34,8 +34,9 @@
         var items = list.getElementsByTagName("li");
         for (var i = 0; i < items.length; i++) {
             //从0开始，截取两位，此法无法成功获取三位及以上的字符串
-            var str1 = items[i].innerText.substr(0, 2);
-            var str2 = items[i].getElementsByTagName('b')[0].innerText;
+            //火狐不支持innerText,用textContent
+            var str1 = items[i].textContent.substr(0, 2);
+            var str2 = items[i].getElementsByTagName('b')[0].textContent;
             var str3 = [str1, str2];
             data.push(str3);
 
