@@ -1,0 +1,74 @@
+/*初始化*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container, .left, .main, .right {
+    padding: 20px;
+    border: solid 1px #999;
+}
+
+.left, .main, .right {
+    background-color: #fff;
+}
+ul li{
+    list-style:none;
+}
+p strong a{
+    color:red;
+}
+/*container*/
+.container {
+    background-color: #eee;
+    min-width: 600px;
+}
+
+.container:after {
+    display: block;
+    content: "";
+    clear: both
+}
+
+/*left*/
+.left {
+    float: left;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.left .team_logo{
+    width: 80px;
+    height: 80px;
+    float:left;
+    display:block;
+}
+.left .team_name{
+    display:block;
+    float:left;
+    margin-left:10px;
+}
+/*main*/
+.main {
+    margin-left: 240px;
+    margin-right: 160px;
+    line-height:30px;
+}
+
+/*right*/
+.right {
+    float: right;
+    width: 120px;
+    box-sizing: border-box;
+}
+
+.right figure {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    border: solid 1px #999;
+}

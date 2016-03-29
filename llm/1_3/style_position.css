@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container, .left, .main, .right {
+    padding: 20px;
+    border: solid 1px #999;
+}
+
+.left, .main, .right {
+    background-color: #fff;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*container*/
+.container {
+    background-color: #eee;
+    position:relative;
+    min-width:600px;
+}
+/*left*/
+.left {
+    width: 200px;
+    box-sizing: border-box;
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+
+.left .team_logo{
+    width: 80px;
+    height: 80px;
+}
+.left .team_name{
+   position:absolute;
+    top:20px;
+    margin-left:10px;
+}
+/*main */
+.main{
+    margin: 0 142px 0 222px;
+    line-height:30px;
+}
+
+/*right*/
+.right {
+    width: 120px;
+    box-sizing: border-box;
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+
+.right figure {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    border: solid 1px #999;
+}

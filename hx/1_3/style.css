@@ -1,0 +1,115 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,button,textarea,p,blockquote,th,td,header,footer,section,aside,tbody,tfoot,thead,caption,label,table
+{
+    margin:0;
+    padding:0
+}
+
+fieldset,img
+{
+    border:0
+}
+
+img
+{
+    vertical-align:middle
+}
+
+input,button,textarea,select,optgroup,option
+{
+    font-family:inherit;
+    font-size:inherit;
+    font-style:inherit;
+    font-weight:inherit
+}
+
+input,button,textarea,select
+{
+    *font-size:100%
+}
+
+body,html
+{
+    font-family:"Microsoft Yahei";
+    background:#DEDEDE;
+    line-height:1.5;
+    width:100%
+}
+
+ol,ul
+{
+    list-style:none
+}
+
+table
+{
+    border-collapse:collapse;
+    border-spacing:0
+}
+
+.container
+{
+    min-width: 500px;
+    padding:20px;
+    margin:20px;
+    background-color:#eee;
+    border:solid 1px #999;
+    overflow: hidden
+}
+
+.container:after
+{
+    display:block;
+    content:"";
+    clear:both
+}
+
+.left
+{   
+    position: relative;
+    float:left;
+    height:120px;
+    width:200px;
+    padding:20px;
+    border:solid 1px #999;
+    background-color:#fff;
+    box-sizing:border-box
+}
+
+.left .title 
+{
+    position: absolute;
+    top:20px;
+    left:110px
+}
+.right
+{
+    float:right;
+    width:120px;
+    padding:20px;
+    border:solid 1px #999;
+    background-color:#fff;
+    box-sizing:border-box
+}
+
+.right figure
+{
+    display:block;
+    float:left;
+    height:80px;
+    width:80px;
+    overflow:hidden;
+    margin:10px 0;
+    border:solid 1px #999;
+    box-sizing:border-box
+}
+
+.main
+{   
+    padding:20px;
+    margin-left:240px;
+    margin-right:160px;
+    background-color:#fff;
+    border:solid 1px #999;
+    box-sizing:border-box
+}
+

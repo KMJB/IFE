@@ -1,0 +1,36 @@
+/* 根据内容多少，高度自行变化 */
+
+body,html
+{
+    height:100%;
+}
+.main{
+    position:relative;
+    width:90%;
+    max-width:400px;
+    height:auto;
+    margin:0 auto;
+    top:50%;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    background-color:#ccc;
+    overflow:hidden
+}
+.circle{
+    position:absolute;
+    width:100px;
+    height:100px;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    background-color:#fc0
+}
+.top{
+    top:-50px;
+    left:-50px
+}
+.bottom{
+    bottom:-50px;
+    right:-50px
+}

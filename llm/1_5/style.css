@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #EEE;
+    font-size: 12px;
+}
+
+/* 头部 */
+header {
+    height: 64px;
+    min-width:500px;
+    background-color: #333;
+}
+
+header img {
+    float: left;
+    margin-left:20px;
+}
+
+header nav {
+    float: right;
+    padding-right: 40px;
+}
+
+header nav a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 64px;
+}
+
+header nav a:hover {
+    color: #999;
+}
+
+/* 中间内容区域 */
+.div-container {
+    margin: 0 auto;
+    width: 96%;
+    min-width:500px;
+    font-size: 15px;
+}
+.content-left{
+   margin-right:360px;
+}
+.content-right{
+    float:right;
+    margin: 0px auto;
+    padding: 30px 20px;
+    width:300px;
+    line-height: 28px;
+    background-color: #fff;
+}
+
+
+.div-container article, figure {
+    margin: 20px auto;
+    padding: 30px 20px;
+    line-height: 28px;
+    background-color: #fff;
+}
+
+.div-container article h3 {
+    margin-top: 10px;
+    color: #666;
+}
+
+.div-container article .article_author {
+    margin-top: 10px;
+    color: #666;
+    font-size: 12px;
+}
+
+.div-container article .article-content {
+    text-indent: 2em;
+}
+
+.div-container article .article-content ul {
+    list-style: none;
+}
+
+figure:after{
+   clear:both;
+    content:"";
+    display:block;
+}
+
+.div-container figure ul > li {
+    float:left;
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    list-style: none;
+    border: 1px solid #999;
+}
+
+
+
+.div-container figure ul > li span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.div-container figure ul > li img {
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.div-container article ol {
+    margin: 10px 0px 10px 40px;
+    font-weight: bold;
+}
+
+.tb_list {
+    width: 100%;
+    text-align:left;
+    border-collapse:collapse;
+}
+.tb_list thead tr{
+    color:#fff;
+    background-color:#000;
+    font-weight:bold;
+}
+.tb_list th,td{
+    padding-left:10px;
+    border:1px solid #999;
+}
+.tb_list tfoot tr{
+    background-color:#999;
+    font-weight: bold;
+
+}
+/* 侧栏 */
+aside h2{
+    padding-left:10px;
+    font-size:16px;
+    border-left:3px solid #999;
+}
+aside form{
+    margin-top:20px;
+    font-size:14px;
+}
+.form-item{
+    min-height:30px;
+}
+.form-item .item-left{
+    float:left;
+    display:inline-block;
+    width:40%;
+    height:100%;
+    text-align:right;
+}
+.form-item .item-right{
+    display:inline-block;
+    width:60%;
+    height:100%;
+}
+.form-item .item-right label{
+    color:#999;
+    font-size:13px;
+}
+.form-item .item-right input[type="checkbox"]:not(0){
+    margin-left:10px;
+}
+.form-item .item-right textarea{
+    width:90%;
+    height:100px;
+}
+aside form input[type="submit"]{
+    width:100%;
+    height:40px;
+    color:#fff;
+    background-color:#2C4CCB;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:16px;
+    border:0px;
+    border-radius:10px;
+
+}
+
+
+
+/* 底部 */
+footer {
+    height: 84px;
+    background-color: #333;
+    color: #fff;
+    line-height: 84px;
+    text-align: center;
+}
+
+/*公共部分*/
+
+/*导test航选中的样式*/
+.cur {
+    color: #999;
+}

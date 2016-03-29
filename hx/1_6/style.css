@@ -1,0 +1,209 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,hr,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td
+{
+    margin:0;
+    padding:0
+}
+
+fieldset,img
+{
+    border:0
+}
+img {
+    vertical-align:middle;
+}
+header,footer,article,nav,aside
+{
+    display:block;
+}
+
+input,button,textarea,select
+{
+    *font-size:100%
+}
+
+body
+{
+    font-family:"Microsoft Yahei";
+    line-height:1.5;
+}
+
+ol,ul
+{
+    list-style:none
+}
+a {
+    text-decoration: none;
+}
+table
+{
+    border-collapse:collapse;
+    border-spacing:0
+}
+/* css reset end */
+#p-news {
+    width:980px;
+    height:1386px;
+    margin:0 auto;
+}
+#p-news .container {
+    height:100%;
+    padding-right: 44px;
+    padding-left: 44px;
+    margin-right: auto;
+    margin-left: auto;
+}
+header {
+    position: relative;
+    width:892px;
+    height:61px;
+    margin:0 auto;
+    font-size: 12px;
+}
+header a {
+    position: relative;
+    display: block;
+    width:110px;
+    height:61px;
+    background-color: #d45d5c;
+    color: #fff;
+
+}
+header a span {
+    position: absolute;
+    bottom: 6px;
+    left:5px;
+}
+header .m-time {
+    position: absolute;
+    right: 0;
+    bottom:6px;
+    color:#d45d5c;
+}
+hr.s-header{
+    width:892px;
+    border-top: 2px solid #938e8c;
+}
+/* 主图部分*/
+main .g-main {
+    margin-top: 30px;
+}
+/* 主图部分左侧*/
+main .g-main .g-mleft {
+    position: relative;
+    float: left;
+    width: 641px;
+    height:301px;
+    background-image: url(../../source/1_6_1.png);
+}
+main .g-main .g-mleft .g-cover {
+    position: absolute;
+    top: 0;
+    width: 191px;
+    height:301px;
+}
+main .g-main .g-mleft .g-lcover {
+    left:0;
+    background-color: rgba(153,204,153,.6);
+}
+main .g-main .g-mleft .g-rcover {
+    right: 0;
+    background-color: rgba(255,204,204,.6);
+
+}
+/* 主图部分右侧*/
+main .g-main .g-mright {
+    position: relative;
+    float: left;
+    width: 251px;
+    height: 301px;
+    left: 48px;
+}
+main .g-main .g-mright .s-main {
+    width:203px;
+    border-top: 2px solid #cc8091;
+}
+main .g-main .g-mright .g-slist1 {
+    font-family:"Microsoft Yahei";
+    font-size:24px;
+    color:rgb(51, 51, 51);
+    // color:#333;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 40px;
+} 
+/* ::first-letter 字体首字母加粗*/
+main .g-main .g-mright .g-slist1::first-letter {
+    font-weight: 500;
+    color:#000;
+} 
+main .g-main .g-mright .g-slist2 {
+    font-family:"KaiTi";
+    font-size:12px;
+    color:#676767;
+    text-decoration: underline;
+    text-transform: lowercase;
+    line-height: 10px;
+} 
+main .g-main .g-mright .g-slist2::first-letter {
+    text-transform: uppercase;
+}
+main .g-main .g-mright .g-slist3 {
+    font-family:"Microsoft Yahei";
+    font-size:116px;
+    font-style: italic;
+    color:#75b86b;
+    text-transform: lowercase;
+    line-height: 126px;
+}
+main .g-main .g-mright .g-slist4 {
+    position: relative;
+}
+main .g-main .g-mright .g-slist4 .size1{
+    
+    font-size:55px;
+    color:#cc8091;
+} 
+main .g-main .g-mright .g-slist4 .size2{
+    position: absolute;
+    font-size:21px;
+    top:20px;
+    color:#cc8091;
+} 
+main .g-main .g-mright .g-slist4 .size3{
+    font-size:12px;
+    color:#cc8091;
+} 
+/* 正文部分*/
+main .m-list {
+    float: left;
+    width:641px;
+    height:200px;
+    margin-top: 20px;
+}
+main .m-list .list {
+    float: left;
+    width:33.3%;
+    line-height: 16px;
+}
+main .m-list .list .title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    text-decoration: underline;
+}
+main .m-list .list .l-title1 {
+    color:#418c59;
+}
+main .m-list .list .l-title2 {
+    color:#d2994f;
+}
+main .m-list .list .l-title3 {
+    color:#cc7680;
+}
+main .m-list .list p {
+    font-family: "SimSun";
+    padding-right:20px;
+    line-height: 16px;
+    color:#767777;
+}
+

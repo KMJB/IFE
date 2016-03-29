@@ -1,0 +1,46 @@
+body,html
+{
+	font-family:"Microsoft Yahei";
+	background:#DEDEDE;
+	line-height:1.5;
+	height:100%;
+	-webkit-transform-style:preserve-3d
+}
+
+main
+{
+	position:relative;
+	width:90%;
+	max-width:400px;
+	height:auto;
+	margin:0 auto;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	background-color:#ccc;
+	overflow:hidden
+}
+
+.radius
+{
+	position:absolute;
+	width:100px;
+	height:100px;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	background-color:#fc0
+}
+
+.radius_site1
+{
+	top:-50px;
+	left:-50px
+}
+
+.radius_site2
+{
+	bottom:-50px;
+	right:-50px
+}
