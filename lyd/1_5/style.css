@@ -1,0 +1,208 @@
+body{
+    margin: auto;
+    font: 15px/1.6em 'Microsoft YaHei';
+    background-color: #EEE;
+}
+/*µ¼º½À¸*/
+.header{
+    width: 100%;
+    min-width: 1000px;
+    height: 70px;
+    background-color: #333;
+}
+.header_inner{
+    width: 80%;
+    margin: auto;
+}
+.header_inner h1{
+    line-height:30px;
+    color: white;
+    float: left;
+    margin:20px 0;
+}
+.header_inner ul{
+    float: right;
+    margin: 20px 0;
+}
+.header_inner ul li{
+    float: left;
+    margin:0 15px;
+    line-height: 30px;
+}
+.header_inner ul li a{
+    text-decoration: none;
+    color:white;
+}
+.header_inner ul li a:hover{
+    color: blue;
+}
+.header_inner ul li a.enter{
+    color: blue;
+}
+
+/*Ò³Ãæ*/
+.container{
+    width: 100%;
+    min-width: 610px;
+}
+.content_left{
+    min-width:150px;
+    margin-right:440px;
+    margin-left: 20px;
+
+}
+
+.content_left:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.sidebar{
+    float: right;
+    margin-right: 20px;
+    width: 400px;
+    background-color: #fff;
+    box-shadow:3px 3px 3px gray;
+}
+.content{
+    background-color: #fff;
+    box-shadow:3px 3px 3px gray;
+}
+.content_inner{
+    margin: auto;
+    width: 95%;
+}
+.sidebar_inner{
+    margin: auto;
+    width: 90%;
+}
+.imgs_inner{
+    margin: auto;
+    width: 97%;
+}
+.content_inner h2,#imgs h2{
+    padding-top: 30px;
+}
+.content_inner h3,.sidebar_inner h3{
+    color: #333;
+    font-size: 17px;
+}
+.sidebar_inner h3{
+    padding-top: 30px;
+}
+.content_inner h3+p{
+    color: #333;
+    font-size: 13px;
+    text-indent: 0;
+}
+.content_inner p {
+    text-indent: 2em;
+}
+.content:nth-child(1) .content_inner img,.content:nth-child(2) .content_inner img{
+    width: 34%;
+    height: auto;
+}
+.content_inner:last-child{
+    padding-bottom: 30px;
+}
+.imgs_inner:last-child,form:last-child{
+    padding-bottom: 30px;
+}
+.content_inner ul{
+    list-style-type: none;
+}
+.img{
+    display: inline-block;
+    border: solid 1px #333;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    width: 100px;
+}
+.img p{
+    margin: 0;
+    text-align: center;
+    padding-top: 10px;
+}
+.img img{
+    padding: 10px;
+    vertical-align: bottom;
+}
+#tbList,#tb_form{
+    border-collapse:collapse;
+    width: 100%;
+}
+#tbList th,#tbList td{
+    border: solid 1px #CCC;
+}
+#tbList>thead{
+    background-color: #333;
+}
+#tbList>thead th{
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 5px;
+}
+#tbList>tbody td{
+    text-align: left;
+    padding-left: 5px;
+    font-size: 13px;
+}
+#tbList>tbody tr:nth-child(2) td{
+    border-bottom-color: #333;
+}
+#tbList>tfoot{
+    background-color: #CCC;
+}
+#tbList>tfoot td{
+    font-weight: bold;
+    padding-left: 5px;
+}
+#tb_form{
+    font-size: 14px;
+    line-height: 2.2em;
+}
+#tb_form table{
+    width: 80%;
+}
+#tb_form tr>td:first-child{
+    width: 120px;
+    text-align: right;
+    padding-right: 15px;
+}
+#tb_form tr>td+td{
+    width: 200px;
+}
+#tb_form .remind{
+    color: gray;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+#tb_form tr:last-child td:first-child{
+    vertical-align: top;
+}
+input[type="submit"]{
+    width: 100%;
+    background-color: #3355D0;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    line-height: 35px;
+    cursor:pointer;
+    border-radius:5px;
+    border: 0;
+}
+/*footer*/
+.footer{
+    width: 100%;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    text-align: center;
+}
+.footer p{
+    line-height:30px;
+    padding: 15px 0;
+}
