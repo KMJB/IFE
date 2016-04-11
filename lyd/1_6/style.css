@@ -69,10 +69,10 @@ header span{
     height: 301px;
     border-top: 2px solid #cc8091;
 }
-.aside .about{
+.about{
     font-family: "Microsoft YaHei";
-    font-variant: small-caps;
-    text-transform: capitalize;
+    font-variant: small-caps;/*小型大写字母*/
+    text-transform: capitalize;/*首字母大写*/
     text-decoration: underline;
     font-size: 24px;
     color: #000;
@@ -81,12 +81,136 @@ header span{
 .aside p:nth-child(2){
     margin-top: -10px;
 }
-.aside .detail{
+.detail{
     font-family: "KaiTi";
     color: #676767;
     line-height: 10px;
     font-style: oblique;
 }
+.large{
+    font-size: 116px;
+    color: #75b86b;
+    font-family: "Microsoft Yahei";
+    font-style: oblique;
+    margin-left: -18px;
+}
+.num{
+    font-family: "Microsoft Yahei";
+    font-size: 55px;
+    color: #cc8091;
+    position: absolute;
+    left: 0px;
+}
+.aside .text_1{
+    font-family: "Microsoft Yahei";
+    font-size: 21px;
+    color: #cc8091;
+    position: absolute;
+    left: 80px;
+    bottom: 5px;
+}
+.aside .text_2{
+    font-family: "Microsoft Yahei";
+    color: #ccc;
+    position: absolute;
+    left: 80px;
+    bottom: -2px;
+}
+.content{
+    margin: 40px 0;
+    _zoom:1;
+}
+.first{
+    width: 230px;
+    float: left;
+    margin-right: 30px;
+}
+.second{
+    width: 206px;
+    float: left;
+    margin-right: 30px;
+
+}
+.third{
+    width: 135px;
+    float: left;
+}
+.content:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.content p{
+    color: #767777;
+    font-family: "SimSun";
+    line-height: 16px;
+}
+.second p{
+    color: #231815;
+    font-family: "Microsoft Yahei";
+    opacity: 0.7;
+}
+.what{
+    font-weight: bold;
+    font-family: "Microsoft Yahei";
+    text-decoration: underline;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #418c59;
+}
+.when{
+    font-weight: bold;
+    font-family: "Microsoft Yahei";
+    text-decoration: underline;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #d2994f;
+}
+.how{
+    font-weight: bold;
+    font-family: "Microsoft Yahei";
+    text-decoration: underline;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #cc7680;
+}
+ul{
+    list-style: none;
+    font-family: "Microsoft Yahei";
+    line-height: 16px;
+    margin-top: 35px;
+}
+ul li{
+    margin-bottom: 7px;
+}
+ul li span{
+    color: #cd4a48;
+    font-style: oblique;
+    opacity: 0.7;
+}
+.article{
+    position: relative;
+}
+.article .left{
+    position: absolute;
+    left: 0;
+    width: 415px;
+}
+.article .right{
+    position: absolute;
+    right: 0;
+    width: 458px;
+}
+.left .left_up{
+    border-bottom: 2px solid #11456b;
+}
+.left_up .text_1{
+
+}
+
 
 
 
