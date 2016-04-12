@@ -70,44 +70,11 @@ function showMsg(result, element) {
  * 渲染aqi-table表格
  */
 function renderAqiList() {
-    aqiTable.innerHTML='';//每次渲染前，先清空tr
-    createTR_title();//创建表格title
+    var str='<tr><th>城市</th><th>空气质量指数</th><th>操作</th></tr>';
     for (var item in aqiData) {
-        createTR(item,aqiData[item]); //循环遍历，创建tr；并绑定事件
+       str+='<tr><td>'+item+'</td><td>'+aqiData[item]+'</td><td><button>删除</button></td></tr>';
     }
-}
-/**
- * 创建tr-title
- */
-function createTR_title() {
-    var trTitle = document.createElement('tr');
-    var th1 = document.createElement('th');
-    th1.innerHTML = '城市';
-    var th2 = document.createElement('th');
-    th2.innerHTML = '空气质量';
-    var th3 = document.createElement('th');
-    th3.innerHTML = '操作';
-    trTitle.appendChild(th1);
-    trTitle.appendChild(th2);
-    trTitle.appendChild(th3);
-    aqiTable.appendChild(trTitle);
-}
-function createTR(city,value) {
-    var trTitle = document.createElement('tr');
-    var td1 = document.createElement('td');
-    td1.innerHTML = city;
-    var td2 = document.createElement('td');
-    td2.innerHTML = value;
-    var td3 = document.createElement('td');
-    var btn = document.createElement('button');
-    btn.onclick=delBtnHandle; //绑定事件
-    btn.innerHTML='删除';
-    td3.appendChild(btn);
-
-    trTitle.appendChild(td1);
-    trTitle.appendChild(td2);
-    trTitle.appendChild(td3);
-    aqiTable.appendChild(trTitle);
+    aqiTable.innerHTML=str;
 }
 
 /**
@@ -123,9 +90,9 @@ function addBtnHandle() {
  * 点击各个删除按钮的时候的处理逻辑
  * 获取哪个城市数据被删，删除数据，更新表格显示
  */
-function delBtnHandle() {
+function delBtnHandle(key) {
     // do sth.
-    delete aqiData[this.parentNode.parentNode.firstChild.innerHTML];
+    delete aqiData[key];
     renderAqiList();
 }
 
@@ -142,8 +109,16 @@ function init() {
     // 在这下面给add-btn绑定一个点击事件，点击时触发addBtnHandle函数
     document.getElementById('add-btn').onclick = addBtnHandle;
     // 想办法给aqi-table中的所有删除按钮绑定事件，触发delBtnHandle函数
-
-
+    aqiTable.addEventListener('click',function(event){
+        var e = event || window.event;
+        //ie he firefox兼容性处理
+        //获当前点击事件作用的对象
+        var dom = e.target || e.srcElement;
+        //小写重置
+        if (dom.nodeName.toLowerCase() == "button") {
+            delBtnHandle(dom.parentNode.parentNode.childNodes[0].childNodes[0].nodeValue); //选择了引起事件的删除按钮的父节点的父节点的子节点的子文本节点的节点值
+        }
+    });
 }
 
 init();
