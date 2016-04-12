@@ -72,8 +72,8 @@ function showMsg(result, element) {
 function renderAqiList() {
     aqiTable.innerHTML='';//每次渲染前，先清空tr
     createTR_title();//创建表格title
-    for (var item1 in aqiData) {
-        createTR(item1,aqiData[item1]); //循环遍历，创建tr；并绑定事件
+    for (var item in aqiData) {
+        createTR(item,aqiData[item]); //循环遍历，创建tr；并绑定事件
     }
 }
 /**
@@ -123,7 +123,7 @@ function addBtnHandle() {
  * 点击各个删除按钮的时候的处理逻辑
  * 获取哪个城市数据被删，删除数据，更新表格显示
  */
-function delBtnHandle(obj) {
+function delBtnHandle() {
     // do sth.
     delete aqiData[this.parentNode.parentNode.firstChild.innerHTML];
     renderAqiList();
@@ -134,10 +134,10 @@ function init() {
     //城市名称失去焦点时，检测用户输入的值是否符合规则
     aqiCity.onblur = function () {
         showMsg(checkIsCNEN(aqiCity.value), aqiCity);
-    }
+    };
     aqiValue.onblur = function () {
         showMsg(checkIsInt(aqiValue.value), aqiValue);
-    }
+    };
 
     // 在这下面给add-btn绑定一个点击事件，点击时触发addBtnHandle函数
     document.getElementById('add-btn').onclick = addBtnHandle;
