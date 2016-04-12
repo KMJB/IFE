@@ -35,7 +35,7 @@
        var newAqiData = aqiData.filter(function(element){
            return element[1] > 60; //提取大于60的数据
        }).sort(function(a,b){
-          return b[1] > a[1]; //按照从大到小进行排序
+          return b[1] - a[1]; //按照从大到小进行排序
        });
         var str='';
         newAqiData.forEach(function(value,index){

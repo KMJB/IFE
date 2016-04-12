@@ -1,0 +1,45 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+label[id*=msg]{
+    color:red;/*提示信息标红*/
+    display:none;
+}
+.content{
+    margin-top:5%;
+}
+.item{
+    width:100%;
+    margin-top:20px;
+}
+.item:after{
+    clear:both;
+    content:"";
+    display: block;
+}
+.item-left{
+    float:left;
+    text-align:right;
+    width:40%;
+}
+.item-right{
+    float:right;
+    text-align:left;
+    width:60%;
+}
+table{
+    width:100%;
+    border:1px solid red;
+    border-collapse: collapse;
+    text-indent: 1em;
+    margin-top:20px;
+    text-align:center;
+    line-height:30px;
+}
+table tr td,th{
+    border:1px solid red;
+}
+table tr th{
+    background-color: #97bb9b;
+}

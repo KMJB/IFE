@@ -7,24 +7,34 @@
 </head>
 <body>
 
-<div>
-    <label>城市名称：<input id="aqi-city-input" type="text"></label><br>
-    <label>空气质量指数：<input id="aqi-value-input" type="text"></label><br>
-    <button id="add-btn">确认添加</button>
+<div class="content">
+    <div class="item">
+        <div class="item-left">城市名称：</div>
+        <div class="item-right">
+            <input id="aqi-city-input" type="text" value="北京" />
+            <label id="msg-aqi-city-input">请输入正确的城市名称（只限中英文）</label>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item-left">空气质量指数：</div>
+        <div class="item-right">
+            <input id="aqi-value-input" type="text" value="100" />
+            <label id="msg-aqi-value-input">请输入正确的空气质量指数（只能为数字）</label>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item-left"></div>
+        <div class="item-right">
+            <button id="add-btn">确认添加</button>
+        </div>
+    </div>
 </div>
 <table id="aqi-table">
 
-      <tr>
-        <td>城市</td><td>空气质量</td><td>操作</td>
-      </tr>
-      <tr>
-        <td>北京</td><td>90</td><td><button>删除</button></td>
-      </tr>
-      <tr>
-        <td>北京</td><td>90</td><td><button>删除</button></td>
-      </tr>
-
 </table>
-<script src="task.js"></script>
+<!--
+<script src="task.js"></script> 遍历创建tr时，给button绑定事件（实现方式较差）
+-->
+<script src="task1.js"></script><!-- 最后init时，给table绑定事件（实现方式较好）   -->
 </body>
 </html>
