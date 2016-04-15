@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding: 0;
+}
+fieldset{
+    width:900px;
+    margin:20px auto;
+    height:50px;
+    padding:10px;
+    font-size:18px;
+    border-radius: 10px;
+}
+fieldset button{
+    margin-left:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+fieldset input{
+    font-size:18px;
+}
+.delete{
+    background-color: #be613e;
+    color:#fff;
+}
+.data-container{
+    position: relative;
+    width:900px;
+    height:480px;
+    margin:0 auto;
+    border:1px solid #000;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.data-list{
+    width:100%;
+    margin-left:-10px;
+    position:absolute;
+    bottom:0;
+}
+
+h1{
+    display:block;
+    text-align:center;
+    font-size:25px;
+}
+
+.data-item{
+    display:inline-block;
+    width:10px;
+    height:70px;
+    background-color: red;
+    margin-right:5px;
+    margin-bottom: 10px;
+}
+
+span{
+    display:inline-block;
+    background-color:red;
+    width:50px;
+    height:50px;
+    margin-left:10px;
+    margin-top:10px;
+    text-align:center;
+    line-height:50px;
+    font-size:18px;
+    font-weight: bold;
+    color:white;
+    cursor:pointer;
+}
+span:hover{
+    background-color:green;
+}

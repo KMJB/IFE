@@ -14,6 +14,10 @@ window.onload = function () {
      * 从左侧或者右侧插入
      */
     function insertIntoList(value, leftOrRightItem) {
+        if(value==''||isNaN(value)){
+            alert('请输入正确的数字');
+            return;
+        }
         if (leftOrRightItem == leftOrRight.left) {
             datalist.splice(0,0,value);
         } else {
@@ -28,6 +32,10 @@ window.onload = function () {
      * 返回刚刚删除的数据
      */
     function deleteValueFromList(value, leftOrRightItem) {
+        if(datalist.length==0)
+        {
+            return '该队列为空，请先添加数据！';
+        }
         if (leftOrRightItem == leftOrRight.left) {
             return datalist.shift();
         } else {
@@ -56,10 +64,7 @@ window.onload = function () {
         //处理逻辑
         //1、检测用户输入的是否为数字
         var inputValue = document.getElementById('txt_input').value;
-        if(inputValue==''||isNaN(inputValue)){
-            alert('请输入正确的数字');
-            return;
-        }
+
         //2、根据点击的按钮类型，进行相应的处理
         switch (element.innerHTML) {
             case '左侧入':
