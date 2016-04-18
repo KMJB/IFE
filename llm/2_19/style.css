@@ -25,7 +25,7 @@ fieldset input{
 .data-container{
     position: relative;
     width:900px;
-    height:480px;
+    height:460px;
     margin:0 auto;
     border:1px solid #000;
     padding:10px;
@@ -48,26 +48,8 @@ h1{
 .data-item{
     display:inline-block;
     width:10px;
-    height:70px;
     background-color: red;
     margin-right:5px;
     margin-bottom: 10px;
 }
 
-span{
-    display:inline-block;
-    background-color:red;
-    width:50px;
-    height:50px;
-    margin-left:10px;
-    margin-top:10px;
-    text-align:center;
-    line-height:50px;
-    font-size:18px;
-    font-weight: bold;
-    color:white;
-    cursor:pointer;
-}
-span:hover{
-    background-color:green;
-}

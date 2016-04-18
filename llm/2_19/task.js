@@ -8,6 +8,27 @@ window.onload = function () {
         'left': 1,
         'right': 0
     };
+    /**
+     * 随机生成一组数据,填充到队列中
+     * 30个10到100的数字
+     */
+    function randomList(){
+        /**
+         * 随机生成一个指定范围内的数字
+         */
+        function RandomNum(Min,Max){
+            var Range = Max - Min;
+            var Rand = Math.random();
+            var num = Min + Math.round(Rand * Range);
+            return num;
+        }
+
+        datalist=[];
+       for(var i=0; i< 30;i++){
+           var number =RandomNum(10,100);
+           datalist.push(number);
+       }
+    }
 
     /**
      * 往队列中插入数据
@@ -42,7 +63,6 @@ window.onload = function () {
         }
     }
 
-
     /**
      * 渲染数组
      * 将数组中数据输出到id为data-list里面
@@ -50,7 +70,7 @@ window.onload = function () {
     function render() {
         var str = '';
         datalist.forEach(function (item, index) {
-            str += '<span index="' + index + '">' + item + '</span>';
+            str += '<div class="data-item" style="height:'+item*4+'px;" title="'+item+'" index="' + index + '"></div>';
         });
         document.getElementById('data-list').innerHTML = str;
     }
@@ -77,10 +97,12 @@ window.onload = function () {
             case '右侧出':
                 alert(deleteValueFromList(inputValue, leftOrRight.right));
                 break;
+            case '随机产生':
+                randomList();
+                break;
             default :
                 break;
         }
-        document.getElementById('txt_input').value = '';
         render();
     }
 
@@ -96,11 +118,6 @@ window.onload = function () {
     }
 
     function init() {
-        var str = '';
-        for (var i = 0; i < 30; i++) {
-            str += '<div class="data-item"></div>';
-        }
-        document.getElementById('data-list').innerHTML=str;
 
         //给每个功能按钮绑定事件
         document.getElementById('div-input').addEventListener('click', function (event) {
@@ -114,7 +131,7 @@ window.onload = function () {
         document.getElementById('data-list').addEventListener('click', function (event) {
             var e = event || window.event;
             var dom = e.srcElement || e.target;
-            if (dom.nodeName.toLowerCase() == "span") {
+            if (dom.nodeName.toLowerCase() == "div") {
                 killMySelf(dom);
             }
         });
