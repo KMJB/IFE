@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务十四：零基础JavaScript编码（二）</title>
+    <script>
+        var aqiData=[
+            ["北京",90],
+            ["上海",50],
+            ["福州",10],
+            ["广州",50],
+            ["成都",90],
+            ["西安",100]
+        ];
+
+    </script>
+</head>
+<body>
+<h3>污染城市列表</h3>
+<ul id="aqi-list">
+    <!--
+    <li>第一名：福州（样例），10</li>
+    -->
+</ul>
+<script>
+    var myArry=new Array();
+    (function(){
+        var j=0;
+        var txt;
+        for(i=0; i<aqiData.length;i++) {//筛选>60的成员添加到新的数组中
+            if(aqiData[i][1]>60) {
+                myArry[j]=aqiData[i];
+                j++;
+            }
+        }
+        myArry=myArry.sort(function(a,b){return b[1]-a[1]});//将新数组中的数据按照elem[1]的大小进行排序
+        for(j=0;j<myArry.length;j++){//遍历 排序后的数组
+            if(txt==undefined) {
+                txt='<li>第'+(j+1)+'名：'+myArry[j][0]+','+myArry[j][1]+'</li>';
+            }
+            else{
+                txt=txt+'<li>第'+(j+1)+'名：'+myArry[j][0]+','+myArry[j][1]+'</li>';
+            }
+        }
+        document.getElementById('aqi-list').innerHTML=txt;
+    })();
+</script>
+</body>
+</html>
