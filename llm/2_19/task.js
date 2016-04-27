@@ -4,6 +4,7 @@
 window.onload = function () {
     /* 数组队列 */
     var datalist = [];
+    var snapArray = [];
     var leftOrRight = {
         'left': 1,
         'right': 0
@@ -22,7 +23,6 @@ window.onload = function () {
             var num = Min + Math.round(Rand * Range);
             return num;
         }
-
         datalist=[];
        for(var i=0; i< 30;i++){
            var number =RandomNum(10,100);
@@ -35,7 +35,7 @@ window.onload = function () {
      * 从左侧或者右侧插入
      */
     function insertIntoList(value, leftOrRightItem) {
-        if (value == '' || isNaN(value)) {
+        if (value == '' || isNaN(value)|| parseInt(value) < 10 || parseInt(value) >100) {
             alert('请输入正确的数字');
             return;
         }
@@ -45,7 +45,6 @@ window.onload = function () {
             datalist.push(value);
         }
     }
-
 
     /**
      * 在队列中删除数据
@@ -67,14 +66,55 @@ window.onload = function () {
      * 渲染数组
      * 将数组中数据输出到id为data-list里面
      */
-    function render() {
+    function render(arr) {
+        arr = arr || datalist;
         var str = '';
-        datalist.forEach(function (item, index) {
-            str += '<div class="data-item" style="height:'+item*4+'px;" title="'+item+'" index="' + index + '"></div>';
+        arr.forEach(function (item, index) {
+            var c_color; //不同的高度，定义不同的颜色
+            if(item>80){
+                c_color = '#005db1;';
+            }else if(item>60){
+                c_color = '#73832a;';
+            }else if(item>40){
+                c_color = '#a02730;';
+            }else{
+                c_color = '#538289;';
+            }
+            str += '<div class="data-item" style="background-color:'+c_color+' height:'+item*4+'px;" title="'+item+'" index="' + index + '"></div>';
         });
         document.getElementById('data-list').innerHTML = str;
     }
 
+    /**
+    * 冒泡排序
+    */
+    function bubble_sort(){
+        for(var i=0; i<datalist.length;i++){
+            for(var j=0; j<datalist.length-i-1 ;j++){
+                if (datalist[j] > datalist[j + 1]) {
+                    var temp = datalist[j+1];
+                    datalist[j+1] =datalist[j];
+                    datalist[j] = temp;
+                   // snapArray.push(datalist);
+                    snapArray.push(JSON.parse(JSON.stringify(datalist))); // 记录快照
+                }
+            }
+        }
+        var timer = setInterval(paint, 10); //定时绘制
+        function paint() {
+            var snapshot = snapArray.shift() || [];
+            if (snapshot.length !== 0) {
+                render(snapshot);
+            } else {
+                clearInterval(timer); //绘制结束
+                return;
+            }
+        }
+
+
+
+
+    }
     /**
      * 点击 功能按钮的处理逻辑
      * 获取用户输入，更新数据，渲染数组
@@ -92,18 +132,22 @@ window.onload = function () {
                 insertIntoList(inputValue, leftOrRight.right);
                 break;
             case '左侧出':
-                alert(deleteValueFromList(inputValue, leftOrRight.left));
+                deleteValueFromList(inputValue, leftOrRight.left);
                 break;
             case '右侧出':
-                alert(deleteValueFromList(inputValue, leftOrRight.right));
+                deleteValueFromList(inputValue, leftOrRight.right);
                 break;
             case '随机产生':
                 randomList();
+                render();
+                break;
+            case '冒泡排序':
+                bubble_sort();
                 break;
             default :
                 break;
         }
-        render();
+
     }
 
     /**
@@ -118,7 +162,6 @@ window.onload = function () {
     }
 
     function init() {
-
         //给每个功能按钮绑定事件
         document.getElementById('div-input').addEventListener('click', function (event) {
             var e = event || window.event;
@@ -131,7 +174,7 @@ window.onload = function () {
         document.getElementById('data-list').addEventListener('click', function (event) {
             var e = event || window.event;
             var dom = e.srcElement || e.target;
-            if (dom.nodeName.toLowerCase() == "div") {
+            if (dom.className.toLowerCase() == "data-item") {
                 killMySelf(dom);
             }
         });
