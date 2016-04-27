@@ -100,7 +100,7 @@ window.onload = function () {
             newArray = hobbyList;
         }
         newArray.splice(cIndex, 1);
-        render(ctype);
+        render(ctype); 
     }
     //鼠标悬浮事件，改变tag/hobby中的文字内容
     function changeTextOver(dom){
