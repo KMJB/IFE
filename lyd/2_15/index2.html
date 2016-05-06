@@ -101,7 +101,7 @@
         var gallery=document.getElementById("imagegallery");
         var links=gallery.getElementsByTagName("a");
         for(var i=0; i<links.length; i++){
-            links[i].onclick=function(){
+            links[i].onmouseover=function(){
                 return !showPic(this);
             }
         }
