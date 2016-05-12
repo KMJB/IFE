@@ -29,6 +29,7 @@ function prepareSlideshow(){
     links[1].onmouseover=function(){
         moveElement("preview",-34,-274,10);
     };
+
     links[2].onmouseover=function(){
         moveElement("preview",-34,-374,10);
     }
