@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务十五：零基础JavaScript编码（三）</title>
+</head>
+<body>
+<ul id="source">
+    <li>北京空气质量<b>90</b></li>
+    <li>上海空气质量<b>70</b></li>
+    <li>天津空气质量<b>80</b></li>
+    <li>广州空气质量<b>50</b></li>
+    <li>深圳空气质量<b>40</b></li>
+    <li>福州空气质量<b>32</b></li>
+    <li>成都空气质量<b>90</b></li>
+</ul>
+
+<button id="sort-btn">排序</button>
+<script>
+    var sort=document.getElementById("sort-btn");
+    sort.onclick=function(){
+        btnhandle();
+    }
+
+    function btnhandle(){
+        var source=document.getElementById("source");
+        var cityair=source.getElementsByTagName("li");
+        if(cityair.length<0) return false;
+        var data=new Array();
+        for(var i=0; i<cityair.length;i++){
+            var city=cityair[i].firstChild.nodeValue;
+            var air=cityair[i].getElementsByTagName("b")[0].firstChild.nodeValue;
+            data[city]=air;
+        }
+
+        data.sort(function(a,b){
+            return b[1]- a[1];
+        });
+
+        var resort=document.createElement("ul");
+        resort.setAttribute("id","resort");
+        var i=0;
+        var rank = ['一', '二', '三', '四', '五', '六', '七'];
+        for(var city in data){
+            var air=data[city];
+            var resort_li=document.createElement("li");
+            var resort_text=document.createTextNode("第"+rank[i]+"名："+city);
+            resort_li.appendChild(resort_text);
+            var resort_b=document.createElement("b");
+            var b_text=document.createTextNode(air);
+            resort_b.appendChild(b_text);
+            resort_li.appendChild(resort_b);
+            resort.appendChild(resort_li);
+            i++;
+        }
+        var body=document.getElementsByTagName("body");
+        body[0].appendChild(resort);
+    }
+</script>
+</body>
+</html>
