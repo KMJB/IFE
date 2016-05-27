@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图像映射</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .imagemap{
+            width:500px;
+            height:400px;
+            position:relative;
+        }
+        .imagemap ul{
+            list-style-type:none;
+        }
+        .imagemap  a{
+            position:absolute;
+            display: block;
+            color:#000;
+            text-decoration: none;
+            border:1px solid transparent;
+        }
+        .imagemap a .outer{
+            display: block;
+            border:1px solid transparent;
+        }
+        .imagemap a .inner{
+            display: block;
+            width:80px;
+            height:120px;
+            border:1px solid transparent;
+        }
+        .imagemap a .note{
+            position:absolute;
+            bottom:-3em;
+            width:7em;
+            padding:0.2em 0.5em;
+            background-color:#ffc;
+            text-align: center;
+            left:-1000em;
+            margin-left:-4em;
+        }
+        .imagemap a:hover .note{
+            left:25px;
+        }
+        .imagemap a:hover .inner{
+            border:1px solid #fff;
+        }
+        .imagemap a:hover .outer{
+            border:1px solid #000;
+        }
+
+        .imagemap .ronald a{
+            top:40px;
+            left:88px;
+        }
+        .imagemap .harry a{
+            top:40px;
+            left:178px;
+        }
+        .imagemap .hermione a{
+            top:40px;
+            left:288px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="imagemap">
+        <img src="1.jpg" alt="哈利波特" width="500" height="400">
+        <ul>
+            <li class="harry">
+                <a href="http://www.baidu.com/" title="哈利波特">
+                    <span class="outer">
+                        <span class="inner">
+                         <span class="note">哈利波特</span>
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li class="hermione">
+                <a href="http://www.baidu.com/" title="赫敏·格兰杰">
+                     <span class="outer">
+                        <span class="inner">
+                         <span class="note">赫敏·格兰杰</span>
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li class="ronald">
+                <a href="http://www.baidu.com/" title="罗恩·韦斯莱">
+                     <span class="outer">
+                        <span class="inner">
+                         <span class="note">罗恩·韦斯莱</span>
+                        </span>
+                    </span></a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

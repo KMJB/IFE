@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>远距离图像映射</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .imagemap{
+            width:500px;
+            height:400px;
+            position:relative;
+        }
+        .imagemap ul{
+            list-style-type:none;
+        }
+        .imagemap  a .hotspot{
+            position:absolute;
+            display: block;
+            width:80px;
+            height:120px;
+            border:1px solid transparent;
+        }
+        .imagemap .ronald a .hotspot{
+            top:40px;
+            left:88px;
+        }
+        .imagemap .harry a .hotspot{
+            top:40px;
+            left:178px;
+        }
+        .imagemap .hermione a .hotspot{
+            top:40px;
+            left:288px;
+        }
+        .imagemap a .link{
+            position:absolute;
+            display: block;
+            text-decoration:none;
+            width:10em;
+            cursor:pointer;
+            left:540px;
+        }
+        .imagemap .ronald a .link{
+            top:2em;
+        }
+        .imagemap .harry a .link{
+            top:4em;
+        }
+        .imagemap .hermione a .link{
+            top:6em;
+        }
+        .imagemap a:hover .link{
+            text-decoration:underline;
+        }
+        .imagemap a:hover .hotspot{
+           border:1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+<div class="imagemap">
+    <img src="1.jpg" alt="哈利波特" width="500" height="400">
+    <ul>
+        <li class="harry">
+            <a href="http://www.baidu.com/" title="哈利波特">
+                  <span class="hotspot"></span>
+                  <span class="link">哈利波特</span>
+            </a>
+        </li>
+        <li class="hermione">
+            <a href="http://www.baidu.com/" title="赫敏·格兰杰">
+                <span class="hotspot"></span>
+                <span class="link">赫敏·格兰杰</span>
+            </a>
+        </li>
+        <li class="ronald">
+            <a href="http://www.baidu.com/" title="罗恩·韦斯莱">
+                <span class="hotspot"></span>
+                <span class="link">罗恩·韦斯莱</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

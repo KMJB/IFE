@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航条</title>
+    <style>
+        .nav{
+            list-style-type:none;
+            margin:20px 0px;
+            padding:0;
+            background-color:#8BD400;
+            border:1px solid #486B02;
+            width:8em;
+        }
+        .nav li a{
+            display:block;
+            text-decoration:none;
+            color:#2B3F00;
+            border-top:1px solid #E4FFD3;
+            border-bottom:1px solid #486B02;
+            line-height: 30px;
+        }
+        .traingleP{
+            display: inline-block;
+            width:28px;
+            height:28px;
+            overflow: hidden;
+        }
+        .traingle{
+            display: inline-block;
+            width:20px;
+            height:20px;
+            background-color:red;
+            transform:rotate(45deg);
+            margin-left:-50%;
+        }
+        .nav1,.nav1 ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            float:left;
+            border:1px solid #486B02;
+            background-color:#8BD400;
+        }
+        .nav1 li{
+            float:left;
+            width:8em;
+            background-color:#8BD400;
+        }
+        .nav1 ul{
+            width:8em;
+            position:absolute;
+            left:-999em;
+        }
+        .nav1 li:hover ul{
+         left:auto;
+            margin-left:-1px;
+        }
+        .nav1 a{
+            display:block;
+            text-decoration:none;
+            color:#2B3F00;
+            padding:0.3em 1em;
+            border-left:1px solid #E4FFD3;
+            border-right: 1px solid #486B02;
+        }
+        .nav1 li li a{
+            border-top:1px solid #E4FFD3;
+            border-bottom: 1px solid #486B02;
+            border-left:0;
+            border-right:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="traingleP">
+        <div class="traingle"></div>
+    </div>
+   <ul class="nav">
+       <li>
+           <a href="http://www.baidu.com/">
+               Home
+           </a>
+       </li>
+       <li><a href="http://www.baidu.com/">Home</a></li>
+       <li><a href="http://www.baidu.com/">Home</a></li>
+   </ul>
+
+    <h2>下方是一个含有下拉菜单的导航条</h2>
+   <ul class="nav1">
+       <li><a href="http://www.baidu.com/">Home</a></li>
+       <li><a href="http://www.baidu.com/">Home1</a>
+           <ul>
+               <li><a href="http://www.baidu.com/">1Home</a></li>
+               <li><a href="http://www.baidu.com/">1Home</a></li>
+               <li><a href="http://www.baidu.com/">1Home</a></li>
+           </ul>
+       </li>
+       <li><a href="http://www.baidu.com/">Home2</a></li>
+   </ul>
+</body>
+</html>
