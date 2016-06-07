@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <title>三列博客模板</title>
     <style>
-        .wrapper{
-            width:920px;
-            margin:0 auto;
-            background-color:red;
+        .box{
+            border:1px solid blue;
+        }
+        .box span{
+            position: relative;
+            font-size: 14px;
+            padding-left: 16px;
+        }
+        .box span:after{
+            content: '';
+            border: 8px solid red;
+            border-left:8px solid orange;
         }
     </style>
 </head>
 <body>
-   <div class="wrapper">
-        <div class="header"></div>
-       <div class="content">
+<div class="box"><span>图书简介</span></div>
 
-       </div>
-       <div class="footer"></div>
-   </div>
+
+
+
+
+<script>
+
+
+</script>
 </body>
 </html>
