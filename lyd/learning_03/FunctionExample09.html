@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function doAdd(num1,num2){
+            arguments[1]=10;
+            alert(arguments[0]+arguments[1]);
+        }
+        function ret(){
+            var a=doAdd(2,3);
+            alert(a);
+        }
+        window.onload=ret();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

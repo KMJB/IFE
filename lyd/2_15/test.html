@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload=function(){
+            var jsArr=new Array();
+            jsArr[0]="数组元素1";
+            jsArr[1]="数组元素2";
+            jsArr["abc"]="对象属性的名称，其值为abc";
+            jsArr[-1]="对象属性的名称-1";
+            jsArr[2]="数组元素3";
+            jsArr[3]="数组元素4";
+            document.write(jsArr.length+"<br/>");
+            for(i = 0; i < jsArr.length; i++)
+            {
+                document.write(jsArr[i] + "<br/>");
+            }
+            document.write(jsArr['abc'] + "<br/>");
+            document.write(jsArr['3'] + "<br/>");
+            document.write(jsArr[-1] + "<br/>");
+            document.write(jsArr + "<br/>");
+            for(var p in jsArr)
+            {
+                document.write(jsArr[p]+"<br/>");
+            }
+            var arr = new Array();
+            arr[0] = '1';
+            arr[9] = '2';
+            alert(arr.length);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

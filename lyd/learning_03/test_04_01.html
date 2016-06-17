@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function person(){
+            var p1=new person();
+            p1.name='zhangsan';
+
+            var p2=p1;//对象之间赋值，现在p1和p2指向的是同一个内存空间
+            alert(p2.name);//zhangsan
+
+            p2.name='apple';
+            alert(p1.name);//apple
+
+            p2=null;//这里是指将p2的栈内存清除了，但是p2指向的堆内存还是存在！
+            alert(p2.name);//undefined/null
+            alert(p1.name);//apple
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
