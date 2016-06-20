@@ -13,7 +13,7 @@ fieldset legend{
     font-size:18px;
 }
 fieldset label{
-    cursor:hand;
+    cursor:pointer;
 }
 fieldset label span{
     display:inline-block;

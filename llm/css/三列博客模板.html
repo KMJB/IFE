@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>三列博客模板</title>
+
     <style>
         .box{
             border:1px solid blue;
+            height:800px;
         }
         .box span{
             position: relative;
@@ -16,18 +18,38 @@
             content: '';
             border: 8px solid red;
             border-left:8px solid orange;
+            position:fixed;
+            left:0;
+            top:0;
         }
+        .box1{
+            border:16px solid green;
+           position:absolute;
+        }
+        .box2{
+            border:16px solid red;
+            float:left;
+        }
+
     </style>
 </head>
 <body>
 <div class="box"><span>图书简介</span></div>
 
-
-
+<div class="box1" id="div1">
+    <div></div>
+    <div></div>
+</div>
+<div class="box2">
+    <button id="btn_test">test</button>
+</div>
 
 
 <script>
-
+setTimeout(function(){
+   var btn_test = document.getElementById('btn_test');
+    btn_test.scrollIntoView();
+},1000);
 
 </script>
 </body>
