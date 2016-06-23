@@ -24,7 +24,7 @@ function getDateStr(dat) {
 function randomBuildData(seed) {
     var returnData = {};
     var dat = new Date("2016-01-01");
-    var datStr = ''
+    var datStr = '';
     for (var i = 1; i < 92; i++) {
         datStr = getDateStr(dat);
         returnData[datStr] = Math.ceil(Math.random() * seed);
@@ -52,7 +52,7 @@ var chartData = {};
 var pageState = {
     nowSelectCity: -1,
     nowGraTime: "day"
-}
+};
 
 /**
  * 渲染图表

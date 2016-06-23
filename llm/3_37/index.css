@@ -1,0 +1,64 @@
+#btnLogin{
+    display: block;
+    margin:0 auto;
+    border-radius: 20px;
+    width: 240px;
+    height: 48px;
+    margin-top:50px;
+    font-size:18px;
+}
+#divFloat {
+    border: 2px solid gray;
+    text-align: left;
+}
+#divFloat h2{
+    background-color:#d0d9e2;
+}
+
+#divFloat form {
+    text-align: right;
+    
+}
+
+#divFloat form button {
+    width: 90px;
+    height:40px;
+    font-size:14px;
+    /*border-radius: 10px;*/
+    outline: none;
+    color: white;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+#divFloat form button:first-child {
+  background-color: #8BD400;
+}
+#divFloat form button:last-child {
+    background-color: #cd4a48;
+}
+
+
+/*test*/
+#divFloat{
+    width:600px;
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin-left:-300px;
+    margin-top:-68px;
+}
+h2{
+    cursor:move;
+}
+.resizable-right-bottom{
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:10px;
+    height:10px;
+    margin-right:-2px;
+    margin-bottom:-2px;
+    cursor:se-resize;
+    background-image: url("task_3_37_1.png");
+
+}
