@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务三十七：UI组件之浮出层</title>
+    <link rel="stylesheet" type="text/css" href="../common/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body>
+   <button id="btnLogin">登录</button>
+   <div class="floatlayer-maskDiv">   <!-- 增加这个div是用来实现遮罩层效果，后期用JS动态创建 -->
+       <!-- 最基本的浮层代码start -->
+       <div id="divFloat">
+           <h2>这是一个弹出层</h2>
+           <p>这是一个弹出层，点击遮罩或者按钮关闭
+               <br/>按住标题处可以拖动
+           </p>
+           <form>
+               <button id="btnSure">确定</button>
+               <button id="btnCancel">取消</button>
+           </form>
+           <div class="floatlayer-resizable"></div><!--增加这个div是为了实现可调节大小样式，后期用JS动态实现 -->
+       </div>
+       <!-- 最基本的浮层代码end -->
+   </div>
+   <div>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+       哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>哈哈哈<br/>
+   </div>
+   <script src="../common/public.js" type="text/javascript"></script>
+   <script src="task37.js" type="text/javascript"></script>
+   <script src="floatlayer.js" type="text/javascript"></script>
+</body>
+</html>
