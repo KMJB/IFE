@@ -4,6 +4,7 @@
 var maskdiv = $('.floatlayer-maskDiv');
 var btnLogin = $('#btnLogin');
 var btnCancle = $('#btnCancel');
+var btnSure = $('#btnSure');
 var title = $('h2');
 var resize =$('floatlayer-resizable');
 var divFloat = $('#divFloat');
@@ -19,6 +20,9 @@ function show(){
 window.onload = function(){
     hide();
     btnLogin.onclick = show;
+    btnCancle.onclick = hide;
+    btnSure.onclick = hide;
+
     /*
     addEvent(title, 'mousedown', function(event) {
         var disX = event.clientX - this.offsetLeft,
@@ -36,5 +40,8 @@ window.onload = function(){
     });
 
    */
+
+
+
 
 };
